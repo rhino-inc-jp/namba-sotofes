@@ -2797,6 +2797,7 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 20;
 }
 .logo-wrap.show .main-logo, .logo-wrap.show .namba, .logo-wrap.show .date {
   opacity: 1;
@@ -3034,6 +3035,30 @@ a:hover {
   }
 }
 
+.bg_1 {
+  width: 100%;
+  margin-top: 2.9333333333%;
+  left: 0;
+}
+@media screen and (min-width: 769px) {
+  .bg_1 {
+    width: 23.6979166667vw;
+    margin-top: 0.5729166667vw;
+  }
+}
+
+.bg_2 {
+  width: 29.9739583333vw;
+  margin-top: 3.0208333333vw;
+  right: 3.6458333333vw;
+}
+
+.bg_3 {
+  width: 21.5104166667vw;
+  margin-top: 4.84375vw;
+  right: 0;
+}
+
 .brand {
   background: #EBCC60;
   color: #000;
@@ -3159,6 +3184,13 @@ body {
 .p-top-area {
   padding: 0 !important;
   margin: 0 !important;
+}
+
+.sec-bg {
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
 }
 
 .special {

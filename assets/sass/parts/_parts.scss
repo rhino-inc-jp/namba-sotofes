@@ -81,3 +81,10 @@ font-style: normal;
     padding: 0!important;
     margin: 0!important;
 }
+
+.sec-bg{
+    line-height: 0;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+}
