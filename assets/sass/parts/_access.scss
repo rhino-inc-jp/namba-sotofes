@@ -120,3 +120,23 @@
         }
     }
 }
+
+
+.access{
+    .bg_1{
+        width: 100;
+        top: spf(17);
+        left: 0;
+        @include pc{
+            width: pcf(497);
+            top: pcf(208);
+        }
+    }
+    .bg_2{
+        width: pcf(507.96);
+        top: unset;
+        bottom: 0;
+        right: 0;
+    }
+
+}

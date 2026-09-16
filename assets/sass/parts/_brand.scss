@@ -45,3 +45,26 @@
         
     }
 }
+
+.brand{
+.bg_1{
+    width: spf(62);
+    top: unset;
+    bottom: spf(31);
+    left: 0;
+    @include pc{
+        width: pcf(542);
+        bottom: pcf(89);
+    }
+}
+.bg_2{
+    width: spf(166);
+    margin-top: spc(25);
+    right: 0;
+    @include pc{
+        width: pcf(692);
+        margin-top: pcf(233);
+    }
+}
+
+}
