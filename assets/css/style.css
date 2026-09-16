@@ -3487,11 +3487,11 @@ body {
   }
   .iijima .special__brand-logo {
     width: 5.2083333333vw;
-    margin: 0.625vw auto 0.9375vw;
+    margin: 1.6666666667vw auto 1.0416666667vw;
   }
   .iijima .special__brand-item {
     width: 11.71875vw;
-    margin: 1.5625vw auto 0.8854166667vw;
+    margin: 2.0833333333vw auto 0.8854166667vw;
   }
 }
 
@@ -3506,7 +3506,7 @@ body {
 @media screen and (min-width: 769px) {
   .raja .special__brand-logo {
     width: 9.1739583333vw;
-    margin: 0.7291666667vw auto 1.5625vw;
+    margin: 0.78125vw auto 1.6666666667vw;
   }
   .raja .special__brand-item {
     width: 6.71875vw;
@@ -3528,8 +3528,8 @@ body {
     margin: 1.0416666667vw auto 1.40625vw;
   }
   .zeptepi .special__brand-item {
-    width: 14.6875vw;
-    margin: 1.7708333333vw auto 1.9270833333vw;
+    width: 100%;
+    margin: 2.2916666667vw auto 2.8645833333vw;
   }
 }
 

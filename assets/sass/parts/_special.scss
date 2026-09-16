@@ -250,11 +250,11 @@
         padding-bottom: pcf(47);
         .special__brand-logo{
             width: pcf(100);
-            margin: pcf(12) auto pcf(18);
+            margin: pcf(32) auto pcf(20);
         }
         .special__brand-item{
             width: pcf(225);
-            margin: pcf(30) auto pcf(17);
+            margin: pcf(40) auto pcf(17);
         }        
     }
 }
@@ -271,7 +271,7 @@
     @include pc{
         .special__brand-logo{
             width: pcf(176.14);
-            margin: pcf(14) auto pcf(30);
+            margin: pcf(15) auto pcf(32);
         }
         .special__brand-item{
             width: pcf(129);
@@ -295,8 +295,8 @@
             margin: pcf(20) auto pcf(27);
         }
         .special__brand-item{
-            width: pcf(282);
-            margin: pcf(34) auto pcf(37);
+            width: 100%;
+            margin: pcf(44) auto pcf(55);
         }        
     }
 }
