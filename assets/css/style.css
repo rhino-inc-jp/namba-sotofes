@@ -3108,10 +3108,23 @@ a:hover {
 .brand-list > li {
   cursor: pointer;
   width: 24.4746666667vw;
+  position: relative;
+}
+.brand-list > li p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.2vw;
+  font-weight: 700;
+  white-space: nowrap;
 }
 @media screen and (min-width: 769px) {
   .brand-list > li {
     width: 10.5416666667vw;
+  }
+  .brand-list > li p {
+    font-size: 1.3020833333vw;
   }
 }
 
