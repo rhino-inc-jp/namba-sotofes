@@ -3096,6 +3096,7 @@ a:hover {
   row-rule: 1px solid #000;
 }
 .brand-list > li {
+  cursor: pointer;
   width: 24.4746666667vw;
 }
 @media screen and (min-width: 769px) {
@@ -3176,6 +3177,14 @@ body {
   left: 0;
   width: 9.8666666667vw;
   line-height: 0;
+  overflow: hidden;
+}
+.section-wrap .section-logo img {
+  transform: translateX(-100%);
+  transition: all 0.5s linear;
+}
+.section-wrap .section-logo.active img {
+  transform: translateX(0);
 }
 .section-wrap .section__inner {
   width: 80.5333333333vw;

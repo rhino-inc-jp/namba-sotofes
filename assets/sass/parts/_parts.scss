@@ -49,6 +49,16 @@ font-style: normal;
         left: 0;
         width: spf(37);
         line-height: 0;
+        overflow: hidden;
+        img{
+            transform: translateX(-100%);
+            transition: all .5s linear;
+        }
+        &.active{
+            img{
+                transform: translateX(0);
+            }
+        }
     }
     .section__inner{
         width: spf(302);

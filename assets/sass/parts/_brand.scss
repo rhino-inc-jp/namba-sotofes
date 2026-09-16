@@ -36,6 +36,7 @@
     column-rule: 1px solid #000; 
     row-rule: 1px solid #000;  
     >li{
+        cursor: pointer;
         width: spf(91.78);
     }
     @include pc{
