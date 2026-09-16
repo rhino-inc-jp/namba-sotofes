@@ -11,6 +11,13 @@
         width: spf(264);
         margin: spf(25) auto spc(29);
     }
+    &__ken{
+        font-size: spf(15);
+        line-height: 1;
+        color: #EEE1C3;
+        font-weight: 700;
+        margin-top: spf(20);
+    }
     &__text{
         font-size: spf(12);
         line-height: calc(22/ 12);
@@ -22,6 +29,10 @@
         &__logo{
             width: pcf(411);
             margin: pcf(51) auto pcf(71);
+        }
+        &__ken{
+            font-size: pcf(22);
+            margin-top: pcf(30);
         }
         &__text{
             font-size: pcf(18);

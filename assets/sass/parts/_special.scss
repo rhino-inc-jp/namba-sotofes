@@ -10,6 +10,13 @@
         width: spf(79);
         margin: spf(31) auto;
     }
+    &__houy{
+        font-size: spf(17);
+        line-height: 1;    
+        color: #EEE1C3;
+        font-weight: 700;
+        margin-top: spf(20);
+    }
     &__lead{
         font-size: spf(13);
         line-height: calc(18 / 13);
@@ -39,6 +46,10 @@
         &__logo{
             width: pcf(158);
             margin: pcf(57) auto;
+        }
+        &__houy{
+            font-size: pcf(24);   
+            margin-top: pcf(30);
         }
         &__lead{
             font-size: pcf(20);   
