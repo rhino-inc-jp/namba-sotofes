@@ -3193,7 +3193,7 @@ body {
 .section-wrap .section__headline {
   font-size: 5.3333333333vw;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 800;
 }
 @media screen and (min-width: 769px) {
   .section-wrap .section-contents {
