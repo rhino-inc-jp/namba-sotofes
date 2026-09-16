@@ -1,0 +1,32 @@
+
+
+@mixin sp {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+
+@mixin pc {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
+}
+
+@function spc($value){
+  @return calc($value / 375) * 100%;
+}
+@function pcc($value){
+  @return calc($value / 1920) * 100%;
+}
+
+
+@function spf($value){
+  @return calc($value / 375 * 100vw);
+}
+@function pcf($value){
+  @return calc($value / 1920 * 100vw);
+}
+
+$yellow: #EBCC60;
+

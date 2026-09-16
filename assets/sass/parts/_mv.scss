@@ -1,0 +1,191 @@
+@use "./mixin" as *;
+
+
+.p-top-mv{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    &.start{
+        .top-kazari{
+            transform: translateX(0);
+        }
+    }
+}
+.side{
+    .top-kazari{
+        line-height: 0;
+        position: absolute;
+    }
+    .top-left{
+        width: spf(240);
+        top: 0;
+        left: 0;
+        transform: translateX(-200%);
+        transition: all 2s linear;
+    }
+    .top-right{
+        width: spf(160);
+        top: spf(14);
+        right: 0;
+        transform: translateX(200%);
+        transition: all 2s linear;
+    }
+    .cloud_1{
+        width: spf(226);
+        top: spf(24);
+        left: 0;
+        
+        transform: translateX(-200%);
+        transition: all 2s .3s linear;
+        img{
+            animation: fuwafuwa_1 2.3s ease-in-out infinite alternate-reverse;
+        }
+    }
+    .cloud_2{
+        width: spf(136);
+        top: spf(111);
+        right: 0;
+        transform: translateX(200%);
+        transition: all 2s .4s linear;
+        img{
+            animation: fuwafuwa_1 2s ease-in-out infinite alternate-reverse;
+        }
+    }
+    @include pc{
+        .top-left{
+            width: pcf(861.44);
+            top: pcf(94);
+            left: pcf(85);
+            z-index: 15;
+        }
+        .top-right{
+            width: pcf(800);
+            top: pcf(68);
+            z-index: 15;
+        }
+        .cloud_1{
+            width: pcf(593);
+            top: pcf(262);
+            z-index: 5;
+        }
+        .cloud_2{
+            width: pcf(585);
+            top: pcf(165);
+            z-index: 5;
+        }
+    }
+}
+
+
+.logo-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    &.show{
+        .main-logo,.namba,.date{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .vol{
+            opacity: 1;
+        }
+    }
+    .logo{
+        line-height: 0;
+    }  
+    .main-logo{
+        width: spf(265);
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+        opacity: 0;
+        transform: translateY(10px);
+        opacity: 0;
+        transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),opacity .5s ease ;
+    } 
+    .namba{
+        width: spf(180);
+        margin: spf(10) auto 0;
+        transform: translateY(10px);
+        opacity: 0;
+        transition: transform 0.6s .2s cubic-bezier(0.34, 1.56, 0.64, 1),opacity .5s .2s ease ;
+    }
+    .date{
+        width: spf(278.33);
+        margin-top: spf(7);
+        transform: translateY(10px);
+        opacity: 0;
+        transition: transform 0.6s .4s cubic-bezier(0.34, 1.56, 0.64, 1),opacity .5s .4s ease ;
+    }
+    .vol{
+        width: spf(109.18);
+        position: absolute;
+        top: spf(-48);
+        left: spf(-38);
+        z-index: 1;
+        opacity: 0;
+        transition: all 1s 1s ease;
+        .vol-kazari{
+            transform-origin: center center;
+            animation: kururi 8s linear infinite;
+        }
+        .vol5{
+            width: spf(33.93);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    @include pc{
+        .main-logo{
+            width: pcf(675.23);
+            margin: 0 auto;
+        } 
+        .namba{
+            width: pcf(458.58);
+            margin: pcf(24) auto 0;
+        }
+        .date{
+            width: pcf(708.5);
+            margin-top: pcf(25);
+        }   
+        .vol{
+            width: pcf(278.18);
+            top: pcf(-122);
+            left: pcf(-96);
+            .vol5{
+                width: pcf(86.46);
+            }
+        }     
+    }
+}
+
+
+
+
+
+@keyframes fuwafuwa_1 {
+    0% {
+        transform: translateY(-2%);
+    }
+
+    100% {
+        transform: translateY(2%);
+    }
+}
+
+@keyframes kururi {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

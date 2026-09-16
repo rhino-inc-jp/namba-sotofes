@@ -1,0 +1,47 @@
+@use "./mixin" as *;
+
+.brand{
+    background: #EBCC60;
+    color: #000;
+    padding: spf(41) 0 spf(51);
+    &__schedule{
+        font-size: spf(18);
+        line-height: calc(28/ 18);
+        margin-top: spf(20);
+        font-weight: bold;
+    }
+    &__text{
+        font-size: spf(12);
+        line-height: calc(22/ 12);
+        margin: spf(23) 0 spf(30);
+    }
+    @include pc{
+        padding: pcf(81) 0 pcf(70);
+        &__schedule{
+            font-size: pcf(28);
+            margin-top: pcf(34);
+            font-weight: 700;
+        }
+        &__text{
+            font-size: pcf(18);
+            margin: pcf(34) 0 pcf(44);
+        }
+    }
+}
+
+.brand-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px; 
+    column-rule: 1px solid #000; 
+    row-rule: 1px solid #000;  
+    >li{
+        width: spf(91.78);
+    }
+    @include pc{
+        >li{
+            width: pcf(202.4);
+        }
+        
+    }
+}

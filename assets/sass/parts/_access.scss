@@ -1,0 +1,122 @@
+@use "./mixin" as *;
+
+
+.access{
+    padding: spf(35) 0 spf(25);
+    background: #EBCC60;
+    color: #000;
+    &__map{
+        position: relative;
+        aspect-ratio: 302 / 242;
+        overflow: hidden;
+        margin-top: spf(25);
+        iframe{
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    }
+    &__address{
+        font-size: spf(12);
+        margin: spf(14) auto spf(34);
+        text-align: center;
+        font-weight: 700;
+    }
+    @include pc{
+        padding: pcf(95) 0 pcf(68);
+        &__map{
+            aspect-ratio: 700 / 373;
+            margin-top: pcf(35);
+        }
+        &__address{
+            font-size: pcf(16);
+            margin: pcf(25) auto pcf(64);
+        }
+    }
+}
+
+.access__info{
+    width: 100%;
+    padding: spf(9) spf(9) spf(19);
+    background: #EEE1C3;
+    color: #D97B50;
+    font-size: spf(10);
+    &-map{
+        width: 100%;
+        line-height: 0;
+        padding-bottom: spf(15);
+        margin-bottom: spf(15);
+        border-bottom: solid 1px #D97B50;
+    }
+    &-station{
+        &-ttl{
+            line-height: 1;
+        }
+        &-list{
+            margin-top: spf(12);
+            line-height: calc(16 / 10);
+        }
+    }
+    @include pc{
+        padding: pcf(18) pcf(17);
+        font-size: pcf(12);
+        display: flex;
+        align-items:center;
+        vertical-align: middle;
+        justify-content: space-between;
+        &-map{
+            width: pcf(346);
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+        &-station{
+            width: pcf(295);
+            height: 100%;
+            padding: pcf(39.6) 0;
+            border-top: solid 1px #D97B50;
+            border-bottom: solid 1px #D97B50;
+            &-list{
+                margin-top: pcf(20);
+                line-height: calc(22 / 12);
+            }
+        }
+    }
+
+}
+
+
+.fes-attention{
+    font-size: spf(9);
+    line-height: calc(15 / 9);
+    letter-spacing: -0.01em;
+    .fes__precautions{
+        margin-top: spf(67);
+        padding: 0 spf(35);
+        
+    }
+    .fes__infomation{
+        margin-top: spf(25);
+        padding: 0 spf(35);
+        dl{
+            display: flex;
+        }
+    }
+    @include pc{
+        font-size: pcf(12);
+        margin-top: pcf(173);
+        width: pcf(818);
+        display: flex;
+        align-items: flex-start;
+        vertical-align: top;
+        justify-content: space-between;
+        .fes__precautions{
+            margin: 0;
+            padding: 0;
+        }
+        .fes__infomation{
+            margin-top: 0;
+            padding: 0;
+        }
+    }
+}

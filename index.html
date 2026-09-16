@@ -36,6 +36,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'stl2ojf',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <!-- inview -->
@@ -67,171 +78,122 @@
   </div> -->
   <main class="l-main p-top">
     <section class="p-top-mv">
-      <div class="p-top-mv_cnt">
-        <h1>
-          <picture>
-            <source media="(min-width: 769px)" srcset="./assets/img/top/mv.png">
-            <img src="./assets/img/top/mv_sp.png" alt="NAMBA SOTOFES 2026 VOL.5 都市型アウトドアイベントなんばソトフェス 10.31 SATURDAY〜11.1 SUNDAY">
-          </picture>
-        </h1>
+      <div class="side">
+        <div class="top-kazari top-left">
+          <img class="pc" src="./assets/img/mv/top-left.png" alt="">
+          <img class="sp" src="./assets/img/mv/top-left-sp.png" alt="">
+        </div>
+        <div class="top-kazari top-right">
+          <img class="pc" src="./assets/img/mv/top-right.png" alt="">
+          <img class="sp" src="./assets/img/mv/top-right-sp.png" alt="">
+        </div>
+        <div class="top-kazari cloud_1">
+          <img class="pc" src="./assets/img/mv/cloud_1.png" alt="">
+          <img class="sp" src="./assets/img/mv/cloud_1-sp.png" alt="">
+        </div>
+        <div class="top-kazari cloud_2">
+          <img class="pc" src="./assets/img/mv/cloud_2.png" alt="">
+          <img class="sp" src="./assets/img/mv/cloud_2-sp.png" alt="">
+        </div>
+      </div>
+      <div class="logo-wrap">
+        <div class="logo main-logo">
+          <img src="./assets/img/mv/main-logo.png" alt="NAMBA SOTO FES">
+        </div>
+        <div class="logo namba">
+          <img src="./assets/img/mv/namba.png" alt="NAMBA SOTO FES">
+        </div>
+        <div class="logo date">
+          <img src="./assets/img/mv/date.png" alt="NAMBA SOTO FES">
+        </div>
+        <div class="logo vol">
+          <img class="vol-kazari" src="./assets/img/mv/vol.png" alt="NAMBA SOTO FES">
+          <span class="logo vol5"><img src="./assets/img/mv/vol5.png" alt="NAMBA SOTO FES"></span>
+        </div>
       </div>
     </section>
     <div class="wrapper">
-      <div class="fixed js-fixed">
-        <div class="fixed_cnt c-inner">
-          <a class="insta" href="https://www.instagram.com/namba_sotofes/" target="_blank">
-            <svg id="_イヤー_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
-              <defs>
-                <style>
-                  .cls-1 {
-                    fill: #eee1c2;
-                  }
-                </style>
-              </defs>
-              <g id="_design">
-                <g>
-                  <path class="cls-1" d="M18.398,26H7.602c-4.192,0-7.602-3.41-7.602-7.602V7.602C0,3.41,3.41,0,7.602,0h10.797c4.192,0,7.602,3.41,7.602,7.602v10.797c0,4.192-3.41,7.602-7.602,7.602ZM7.602,2.424c-2.855,0-5.178,2.323-5.178,5.178v10.797c0,2.855,2.323,5.178,5.178,5.178h10.797c2.855,0,5.178-2.323,5.178-5.178V7.602c0-2.855-2.323-5.178-5.178-5.178H7.602Z" />
-                  <circle class="cls-1" cx="19.947" cy="6.066" r="1.62" />
-                  <path class="cls-1" d="M13,19.72c-3.706,0-6.72-3.015-6.72-6.72s3.015-6.72,6.72-6.72,6.72,3.015,6.72,6.72-3.015,6.72-6.72,6.72Zm0-11.017c-2.369,0-4.297,1.927-4.297,4.297s1.927,4.297,4.297,4.297,4.297-1.927,4.297-4.297-1.927-4.297-4.297-4.297Z" />
-                </g>
-              </g>
-            </svg>
-            <span class="insta-text sp">最新情報は<br class="sp">こちら</span>
-          </a>
+      <div class="fixed-nav fixed js-fixed">
+        <div class="fixed-nav__logo nav-img">
+          <img src="./assets/img/anchor/anchor-logo.png" alt="NAMBA SOTO FES">
         </div>
-        <section class="p-top-ld">
-          <div class="p-top-ld_cnt c-inner">
-            <div class="p-top-ld_cnt-lft">
-              <picture>
-                <source media="(min-width: 769px)" srcset="./assets/img/top/ld_lft.svg">
-                <img src="./assets/img/top/ld_lft_sp.svg" alt="都市型アウトドアイベントなんばソトフェス">
-              </picture>
+        <div class="fixed-nav__inner">
+          <ul class="fixed-nav__list en">
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#brand">BRAND BOOTH</a></li>
+              <li><a href="#STAGE02">BRAND BOOTH</a></li>
+              <li><a href="#access">ACCESS</a></li>
+          </ul>
+          <div class="fixed-nav__logos nav-img">
+            <div class="nav__insta">
+              <img src="./assets/img/anchor/insta.png" alt="">
             </div>
-            <div class="p-top-ld_cnt-center">
-              <picture>
-                <source media="(min-width: 769px)" srcset="./assets/img/top/ld_center.svg">
-                <img src="./assets/img/top/ld_center.svg" alt="NAMBA SOTOFES 2026 VOL.5">
-              </picture>
+            <div class="nav__namba nav-img">
+              <img src="./assets/img/anchor/namba.png" alt="">
             </div>
-            <div class="p-top-ld_cnt-rgt">
-              <picture>
-                <source media="(min-width: 769px)" srcset="./assets/img/top/ld_rgt.svg">
-                <img src="./assets/img/top/ld_rgt_sp.svg" alt="10.31 SATURDAY〜11.1 SUNDAY">
-              </picture>
+            <div class="nav__date nav-img">
+              <img src="./assets/img/anchor/date.png" alt="">
             </div>
           </div>
-        </section>
-        <nav class="stickyNav">
-          <ul class="stickyNav-list js-flowList">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#brand">BRAND BOOTH</a></li>
-            <li><a href="#STAGE02">SPECIAL CONTENTS</a></li>
-            <li><a href="#sponsor">SPONSOR</a></li>
-            <li><a href="#access">ACCESS</a></li>
-          </ul>
-        </nav>
+        </div>
       </div>
       <section class="p-top-area js-area">
         <div class="p-top-area_cnt c-inner">
-          <div id="about" class="p-top-area_cnt-box scroll-point">
-            <div class="box-corner box-corner1"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner2"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner3"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner4"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="p-top-area_cnt-box-inner">
-              <h2 class="p-top-area_cnt-box-ttl"><span class="en-ttl">ABOUT</span><span class="ja-ttl">なんばソトフェスとは？</span></h2>
-              <p class="p-top-area_cnt-box-txt">
-                緑豊かな商業施設「なんばパークス」を舞台に開催される“都市型アウトドアフェス"<br>
-                5年目となる今年は、全国のアウトドアブランドが集結し、キャンプやフィッシング、トレッキングなどさまざまなアクティビティを彩るアイテムが勢ぞろい！<br>
-                ワークショップやソト遊び体験も盛りだくさん！！<br>
-                子どもから大人まで、見て、触れて、体験して楽しめる2日間。都会の真ん中でアウトドアの魅力を満喫しよう！
-              </p>
-              <div class="p-top-area_cnt-box-img">
-                <picture>
-                  <source media="(min-width: 769px)" srcset="./assets/img/top/ab_img1.jpg">
-                  <img src="./assets/img/top/ab_img1_sp.jpg" alt="なんばソトフェス 画像">
-                </picture>
+          <div id="about" class="scroll-point about section-wrap">
+            <div class="section-contents">
+              <div class="section-logo">
+                <img src="./assets/img/about/about.png" alt="">
+              </div>
+              <div class="about__inner section__inner">
+                <p class="about__headline section__headline">
+                  なんばソトフェスとは？
+                </p>
+                <p class="about__text">
+                  緑豊かな商業施設「なんばパークス」を舞台に開催される“都市型アウトドアフェス”5年目となる今年は、全国のアウトドアブランドが集結し、キャンプやフィッシング、<br>
+                  トレッキングなどさまざまなアクティビティを彩るアイテムが勢ぞろい！ワークショップやソト遊び体験も盛りだくさん！！子どもから大人まで、見て、触れて、体験して楽しめる2日間。<br>
+                  都会の真ん中でアウトドアの魅力を満喫しよう！
+                </p>
               </div>
             </div>
           </div>
-          <div id="brand" class="p-top-area_cnt-box scroll-point js-logoArea">
-            <div class="box-corner box-corner1"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner2"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner3"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner4"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="p-top-area_cnt-box-inner">
-              <h2 class="p-top-area_cnt-box-ttl"><span class="en-ttl">BRAND BOOTH</span><span class="ja-ttl">ブランド出展</span></h2>
-              <div class="p-top-area_cnt-box-dp"><span>10/31</span> (土)〜<span>11/1</span> (日) <span>11:00～17:00</span><br><span>1F</span> なんばカーニバルモール</div>
-              <p class="p-top-area_cnt-box-txt">なんばパークスやなんばCITYのテナントであるアウトドアショップと<br class="pc">全国各地のアウトドアブランド・ショップが大集結！<br>今年はアウトドアギアやアパレルに加え、フィッシングやトレッキングなど多彩なブランドが出展！</p>
-              <p class="p-top-area_cnt-box-txt --center">クリック・タップで、出展内容をチェック！</p>
-              <ul class="p-top-area_cnt-box-logo">
-                <li data-slide="0"><img src="./assets/img/top/logo_alpen.svg" alt="Alpen Outdoors"></li>
-                <li data-slide="1"><img src="./assets/img/top/logo_unby.svg" alt="UNBY"></li>
-                <li data-slide="2"><img src="./assets/img/top/logo_af.svg" alt="A＆F COUNTRY"></li>
-                <li data-slide="3"><img src="./assets/img/top/logo_orange.svg" alt="OUTDOOR LIFE STYLE Orange"></li>
-                <li data-slide="4"><img src="./assets/img/top/logo_beaver.svg" alt="BEAVER"></li>
-                <li data-slide="5"><img src="./assets/img/top/logo_woody.svg" alt="WOODY HOUSE"></li>
-                <li data-slide="6"><img src="./assets/img/top/logo_icelabjapan.svg" alt="ICE lab Japan"></li>
-                <li data-slide="7"><img src="./assets/img/top/logo_aplus.svg" alt="ASOMATOUS"></li>
-                <li data-slide="8"><img src="./assets/img/top/logo_woodandwood.svg" alt="Wood and Wood"></li>
-                <li data-slide="9"><img src="./assets/img/top/logo_kakuri.svg" alt="Kakuri"></li>
-                <li data-slide="10"><img src="./assets/img/top/logo_9w.svg" alt="9w. BEST FOOD MADE OUTDOORS"></li>
-                <li data-slide="11"><img src="./assets/img/top/logo_cobmaster.svg" alt="COBMASTER"></li>
-                <li data-slide="12"><img src="./assets/img/top/logo_goalzero.svg" alt="GOALZERO"></li>
-                <li data-slide="13"><img src="./assets/img/top/logo_sabba.svg" alt="SABBATICAL"></li>
-                <li data-slide="14"><img src="./assets/img/top/logo_duckrowdepart.svg" alt="DUCKROW DEPART"></li>
-                <li data-slide="15"><img src="./assets/img/top/logo_danner.svg" alt="Danner"></li>
-                <li data-slide="16"><img src="./assets/img/top/logo_tempra.svg" alt="TEMPRA GARAGE TOKYO"></li>
-                <li data-slide="17"><img src="./assets/img/top/logo_never-wasted.svg" alt="NEVER WASTED"></li>
-                <li data-slide="18"><img src="./assets/img/top/logo_nora.svg" alt="NORAs"></li>
-                <li data-slide="19"><img src="./assets/img/top/logo_half-track-products.svg" alt="HALFTRACKPRODUCTS"></li>
-                <li data-slide="20"><img src="./assets/img/top/logo_hotarakashi.svg" alt="ほったらかしキャンプ場"></li>
-                <li data-slide="21"><img src="./assets/img/top/logo_parasol.svg" alt="PARA-SOL MARKET"></li>
-                <li data-slide="22"><img src="./assets/img/top/logo_kurotakimura.svg" alt="黒滝村森林組合"></li>
-                <!-- <li data-slide="23"><img src="./assets/img/top/logo_oosaka-hokenhukushi.svg" alt="大阪保健福祉専門学校"></li> -->
+          <div id="brand" class="scroll-point brand section-wrap">
+            <div class="section-contents">
+              <div class="section-logo">
+                <img src="./assets/img/brand/brand.png" alt="">
+              </div>
+              <div class="brand__inner section__inner">
+                <h2 class="brand__headline section__headline">ブランド出展</h2>
+                <p class="brand__schedule">10/31(土)〜11/1(日)11:00～17:00<br>1F なんばカーニバルモール</p>
+                <p class="brand__text">なんばパークスやなんばCITYのテナントであるアウトドアショップと<br class="pc">全国各地のアウトドアブランド・ショップが大集結！<br>今年はアウトドアギアやアパレルに加え、フィッシングやトレッキングなど多彩なブランドが出展！<br>
+                クリック・タップで、出展内容をチェック！
+                </p>
                 
-                <!-- <li data-slide="3"><img src="./assets/img/top/logo_kc.svg" alt="Kc's"></li> -->
-                <!-- <li data-slide="6"><img src="./assets/img/top/logo_workman.svg" alt="ワークマン女子"></li>
-                <li data-slide="8"><img src="./assets/img/top/logo_nut.svg" alt="&NUT"></li>
-                <li data-slide="9"><img src="./assets/img/top/logo_weekend.png" alt="WEEKEND（ER）＆ CO."></li>
-                <li data-slide="12"><img src="./assets/img/top/logo_cancan.svg" alt="cancan"></li>
-                <li data-slide="13"><img src="./assets/img/top/logo_gahga.svg" alt="GAHGA"></li>
-                <li data-slide="14"><img src="./assets/img/top/logo_kiu.svg" alt="KIU"></li>
-                <li data-slide="17"><img src="./assets/img/top/logo_sabbatical.jpg" alt="SABBATICAL"></li>
-                <li data-slide="18"><img src="./assets/img/top/logo_jrd.svg" alt="JRD"></li>
-                <li data-slide="19"><img src="./assets/img/top/logo_stone-master.svg" alt="STONEMASTER"></li>
-                <li data-slide="20"><img src="./assets/img/top/logo_zane.svg" alt="ZANE ARTS"></li>
-                <li data-slide="21"><img src="./assets/img/top/logo_duck.svg" alt="DUCK ROW"></li>
-                <li data-slide="27"><img src="./assets/img/top/logo_handson-grip.svg" alt="handson grip"></li>
-                <li data-slide="28"><img src="./assets/img/top/logo_hige.svg" alt="HIGE"></li>
-                <li data-slide="30"><img src="./assets/img/top/logo_piillo.svg" alt="Piillo"></li>
-                <li data-slide="31"><img src="./assets/img/top/logo_fiftys.svg" alt="fiftys"></li>
-                <li data-slide="32"><img src="./assets/img/top/logo_lava-lava.svg" alt="lava-lava"></li>
-                <li data-slide="33"><img src="./assets/img/top/logo_roxy.svg" alt="ROXY"></li>
-                <li data-slide="34"><img src="./assets/img/top/logo_onepot.svg" alt="ONE POT WONDER !!"></li> -->
-
-                <!-- <li data-slide="6"><img src="./assets/img/top/logo_lowya.svg" alt="LOWYA"></li> -->
-                <!-- <li data-slide="5"><img src="./assets/img/top/logo_luminox.svg" alt="Luminox"></li> -->
-                <!-- <li data-slide="12"><img src="./assets/img/top/logo_camp.svg" alt="CAMP HACK STORE"></li> -->
-                <!-- <li data-slide="14"><img src="./assets/img/top/logo_koto.svg" alt="KOTOcamp"></li> -->
-                <!-- <li data-slide="18"><img src="./assets/img/top/logo_nanga.svg" alt="NANGA"></li> -->
-                <!-- <li data-slide="20"><img src="./assets/img/top/logo_noradougu.svg" alt="野良道具製作所"></li> -->
-                <!-- <li data-slide="24"><img src="./assets/img/top/logo_piilo.svg" alt="Piilo"></li> -->
-                <!-- <li data-slide="25"><img src="./assets/img/top/logo_ralbuddy.svg" alt="RALBUDDY PRODUCT"></li> -->
-                <!-- <li data-slide="26"><img src="./assets/img/top/logo_nihonmorukku.svg" alt="日本モルック協会"></li> -->
-              </ul>
-              <!-- <div class="p-top-area_cnt-box-logoTtl">
-                <img src="./assets/img/top/logottl.svg" alt="OUTDOOR THINGS">
-              </div> -->
-              <ul class="p-top-area_cnt-box-logo">
-                <!-- <li data-slide="27"><img src="./assets/img/top/logo_atom.svg" alt="ATOM DESIGN"></li> -->
-                <!-- <li data-slide="29"><img src="./assets/img/top/logo_calmastore.png" alt="Cobmastore"></li> -->
-                <!-- <li data-slide="34"><img src="./assets/img/top/logo_baibusu.png" alt="バイブス商店"></li> -->
-              </ul>
-              <ul class="p-top-area_cnt-box-att">
-                <li>※なんばカーニバルモールでのミナピタポイントのご利用・付与はできかねますので、あらかじめご了承ください。※なんばカーニバルモールでのミナピタポイントのご利用・付与はできかねますので、あらかじめご了承ください。※なんばカーニバルモールでのミナピタポイントのご利用・付与はできかねますので、あらかじめご了承ください。</li>
-                <li>※なんばカーニバルモールでのお買上金額は、駐車場優待サービスの対象となりませんので、あらかじめご了承ください。</li>
-              </ul>
+                <ul class="brand-list">
+                  <li data-slide="0"><img src="./assets/img/top/logo_alpen.svg" alt="Alpen Outdoors"></li>
+                  <li data-slide="1"><img src="./assets/img/top/logo_unby.png" alt="UNBY"></li>
+                  <li data-slide="2"><img src="./assets/img/top/logo_af.svg" alt="A＆F COUNTRY"></li>
+                  <li data-slide="3"><img src="./assets/img/top/logo_orange.svg" alt="OUTDOOR LIFE STYLE Orange"></li>
+                  <li data-slide="4"><img src="./assets/img/top/logo_beaver.svg" alt="BEAVER"></li>
+                  <li data-slide="5"><img src="./assets/img/top/logo_woody.svg" alt="WOODY HOUSE"></li>
+                  <li data-slide="6"><img src="./assets/img/top/logo_icelabjapan.png" alt="ICE lab Japan"></li>
+                  <li data-slide="7"><img src="./assets/img/top/logo_aplus.svg" alt="ASOMATOUS"></li>
+                  <li data-slide="8"><img src="./assets/img/top/logo_woodandwood.svg" alt="Wood and Wood"></li>
+                  <li data-slide="9"><img src="./assets/img/top/logo_kakuri.svg" alt="Kakuri"></li>
+                  <li data-slide="10"><img src="./assets/img/top/logo_9w.svg" alt="9w. BEST FOOD MADE OUTDOORS"></li>
+                  <li data-slide="11"><img src="./assets/img/top/logo_cobmaster.svg" alt="COBMASTER"></li>
+                  <li data-slide="12"><img src="./assets/img/top/logo_goalzero.svg" alt="GOALZERO"></li>
+                  <li data-slide="13"><img src="./assets/img/top/logo_sabba.svg" alt="SABBATICAL"></li>
+                  <li data-slide="14"><img src="./assets/img/top/logo_duckrowdepart.png" alt="DUCKROW DEPART"></li>
+                  <li data-slide="15"><img src="./assets/img/top/logo_danner.svg" alt="Danner"></li>
+                  <li data-slide="16"><img src="./assets/img/top/logo_tempra.svg" alt="TEMPRA GARAGE TOKYO"></li>
+                  <li data-slide="17"><img src="./assets/img/top/logo_never-wasted.svg" alt="NEVER WASTED"></li>
+                  <li data-slide="18"><img src="./assets/img/top/logo_nora.svg" alt="NORAs"></li>
+                  <li data-slide="19"><img src="./assets/img/top/logo_half-track-products.svg" alt="HALFTRACKPRODUCTS"></li>
+                  <li data-slide="20"><img src="./assets/img/top/logo_hotarakashi.png" alt="ほったらかしキャンプ場"></li>
+                  <li data-slide="21"><img src="./assets/img/top/logo_parasol.svg" alt="PARA-SOL MARKET"></li>
+                  <li data-slide="22"><img src="./assets/img/top/logo_kurotakimura.png" alt="黒滝村森林組合"></li>
+                </ul>
+              </div>
             </div>
           </div>
           <div id="modal01" class="modal">
@@ -395,424 +357,243 @@
 
             </div>
           </div>
-          <!-- <div id="fashion" class="p-top-area_cnt-box scroll-point">
-            <div class="box-corner box-corner1"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner2"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner3"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner4"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="p-top-area_cnt-box-inner">
-              <h2 class="p-top-area_cnt-box-ttl"><span class="en-ttl">FASHION SHOW</span><span class="ja-ttl">アウトドアアパレルファッションステージ</span></h2>
-              <div class="p-top-area_cnt-box-dp"><span>11/3</span> (日)<br>①<span>11:00</span>～<span>12:00</span> ②<span>14:00</span>～<span>15:00</span><br><span>2F</span> キャニオンコート</div>
-              <p class="p-top-area_cnt-box-txt">大阪文化服装学院の生徒がアウトドアブランドの商品をコーディネートし、学生自身がモデルとなりステージに登場します。<br>各ブランドのおすすめコーディネート、アイテムを紹介します。</p> -->
-          <!-- <div class="p-top-area_cnt-box-img modalImg js-faImg">
-                <picture>
-                  <source media="(min-width: 769px)" srcset="./assets/img/top/fa_img1.jpg">
-                  <img src="./assets/img/top/fa_img1_sp.jpg" alt="なんばソトフェス 画像">
-                </picture>
-              </div> -->
-          <!-- モーダルの構造 -->
-          <!-- <div id="modal-map" class="modalFa">
-                <div class="modalFa_content">
-                  <div class="p-top-area_cnt-box-flex">
-                    <div class="p-top-area_cnt-box-flex-img"><a href="https://www.osaka-bunka.com/" target="_blank"><img src="./assets/img/top/fa_img2.png" alt="大阪文化服装学院 画像"></a></div>
-                    <p class="p-top-area_cnt-box-flex-txt">創立78年の歴史を持つ、西日本最大級のファッション専門学校。「ファッションで社会に貢献する」という経営方針のもと、近年は海外のファッションスクールとの連携を高め、国際的に活躍できる人材の育成に注力。また、世界的にDXへのニーズが高まるなか、デジタルコンテンツへの投資も積極的に行い、「国際感覚」と「デジタルスキル」を融合し、新たな価値を生み出す創造力を養成している。「日本で最も高い成果をあげ、アジアを牽引する発信力を持ち、世界から信頼されるファッション教育機関であり続ける」ことをビジョンに掲げている。<br>2024年に発表された、繊研新聞主催「第1回ファッションスクールアワード」では「準大賞」に選出。全国2位(西日本1位)にランキングされている。</p>
-                  </div>
-                </div>
-              </div> -->
-          <!-- <div class="p-top-area_cnt-box-flex">
-                <div class="p-top-area_cnt-box-flex-img"><a href="https://www.osaka-bunka.com/" target="_blank"><img src="./assets/img/top/fa_img2.png" alt="大阪文化服装学院 画像"></a></div>
-                <p class="p-top-area_cnt-box-flex-txt">創立78年の歴史を持つ、西日本最大級のファッション専門学校。「ファッションで社会に貢献する」という経営方針のもと、近年は海外のファッションスクールとの連携を高め、国際的に活躍できる人材の育成に注力。また、世界的にDXへのニーズが高まるなか、デジタルコンテンツへの投資も積極的に行い、「国際感覚」と「デジタルスキル」を融合し、新たな価値を生み出す創造力を養成している。「日本で最も高い成果をあげ、アジアを牽引する発信力を持ち、世界から信頼されるファッション教育機関であり続ける」ことをビジョンに掲げている。<br>2024年に発表された、繊研新聞主催「第1回ファッションスクールアワード」では「準大賞」に選出。全国2位(西日本1位)にランキングされている。</p>
+          
+            <div id="STAGE02" class="scroll-point special section-wrap">
+              
+            <div class="section-contents">
+              <div class="section-logo">
+                <img src="./assets/img/special/special.png" alt="">
               </div>
-            </div>
-          </div> -->
-          <!-- <div id="talk" class="p-top-area_cnt-box scroll-point">
-            <div class="box-corner box-corner1"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner2"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner3"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner4"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="p-top-area_cnt-box-inner">
-              <h2 class="p-top-area_cnt-box-ttl"><span class="en-ttl">TALK SHOW</span><span class="ja-ttl">CAMP HACK presents <br class="sp">アウトドアトークショー</span></h2>
-              <div class="p-top-area_cnt-box-dp"><span>11/3</span> (日)<br><span>2F</span> キャニオンコート</div> -->
-          <!-- <p class="p-top-area_cnt-box-txt">このテキストはサンプルです。このテキストはサンプルです。このテキストはサンプルです。<br>このテキストはサンプルです。このテキストはサンプルです。</p> -->
-          <!-- <div class="p-top-area_cnt-box-img">
-                <picture>
-                  <source media="(min-width: 769px)" srcset="./assets/img/top/talk_img1.jpg">
-                  <img src="./assets/img/top/talk_img1_sp.jpg" alt="なんばソトフェス 画像">
-                </picture>
-              </div> -->
-          <!-- </div>
-          </div> -->
-          <!-- <div id="workshop" class="p-top-area_cnt-box scroll-point">
-            <div class="box-corner box-corner1"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner2"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner3"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner4"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="p-top-area_cnt-box-inner">
-              <h2 class="p-top-area_cnt-box-ttl"><span class="en-ttl">WORKSHOP</span><span class="ja-ttl">ワークショップ</span></h2>
-              <ul class="p-top-area_cnt-box-ws">
-                <li>
-                  <img src="./assets/img/top/ws_logo01.svg" alt="">
-                  <p class="ttl">「ぱーくす山登山体験」</p>
-                  <p class="dp"><span>11/2</span> (土)・<span>3</span> (日) <br>①<span> 11:00</span>～ ②<span> 13:00</span>～<br>③<span> 15:00</span>～<br>（受付）なんばパークス<span>3F</span><br>「アルペンアウトドアーズ」店舗にて受付</p>
-                  <p class="txt">アルペンアウトドアーズ presents まちなか登山体験！パークスガーデンを「ぱーくす山」と見立て、実際の登山道具を背負って登山の過酷さと楽しさを疑似体験していただきます。登山用品は実際にアルペンアウトドアーズで販売している商品を無料でレンタルできます！<br>事前申し込み制（当日空きがあれば参加可能）参加無料</p>
-                  <p class="att">※参加方法の詳細は<a href="https://nmes.jp/ja/app/GA10948sotofes2024tozan" target="_blank">こちら</a>をご確認ください。</p>
-                </li>
-                <li>
-                  <img src="./assets/img/top/ws_logo02.jpg" alt="">
-                  <p class="ttl">モルック大会＆体験会</p>
-                  <p class="dp"><span>11/2</span> (土)・<span>3</span> (日) <br><span>11:00</span>～ <span>/ 13:00</span>～ <span>/ 14:00</span>～ <br><span>15:00</span>～ <span>/ 16:00</span>～ <br><span>8F</span>パークスガーデン</p>
-                  <p class="txt">なんばパークスの屋上公園でアウトドアスポーツである本格的なモルックが楽しめるモルック大会を開催！お子さま向けにモルックを手軽に体験いただけるコーナーも設置しております。事前申し込み制（当日空きがあれば参加可能）参加無料</p>
-                  <p class="att">※参加方法の詳細は<a href="https://nmes.jp/ja/app/GA10948sotofes2024morukku" target="_blank">こちら</a>をご確認ください。</p>
-                </li>
-                <li>
-                  <img class="pc" src="./assets/img/top/ws_logo03.jpg" alt="">
-                  <p class="ttl">秋のガーデンフォトウォーク</p>
-                  <p class="dp"><span>11/3</span> (日)・<br><span> 10:00</span>～ <span> 12:00</span><br><span>8F</span>パークスガーデン</p>
-                  <p class="txt">「カメラのキタムラ」と共同で、フォトグラファー鎌田風花さんによるなんばパークスガーデンフォトウォーク！を開催します。秋のパークスガーデンで花や植物をご覧いただいながら、魅力的な写真の撮り方や、切り取り方などもレクチャーします。</p>
-                  <p class="att">※参加方法・料金などの詳細は下記リンクをご確認ください。<br>午前の部の詳細は<a href="https://www.npopcc.jp/classroom/detail/?id=7295&category_id=11" target="_blank">こちら</a><br>午後の部の詳細は<a href="https://www.npopcc.jp/classroom/detail/?id=7296&category_id=20" target="_blank">こちら</a></p>
-                </li>
-              </ul>
-            </div>
-          </div> -->
-          <!-- <div id="STAGE" class="p-top-area_cnt-box -kyanos scroll-point">
-            <div class="box-corner box-corner1"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner2"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner3"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner4"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="p-top-area_cnt-box-inner">
-              <h2 class="p-top-area_cnt-box-ttl"><span class="en-ttl">STAGE</span><span class="ja-ttl">ステージ</span></h2>
-              <div class="p-top-area_cnt-box-subtitle -text"><span>キャノーズ特別出店</span></div>
-              <div class="p-top-area_cnt-box-dp"><span>11/1</span> (土)</div>
-              <div class="p-top-area_cnt-box-dp -lh14">ブランド出店　<br class="sp"><span>11:00～14:00、15:00～17:00</span><br>トークショー兼ミニライブ　<br class="sp"><span>14:00～15:00</span></div>
-              <p class="p-top-area_cnt-box-txt">なんばソトフェスに、レゲエユニット 「キャノーズ」 が初登場！<br class="pc">当日は、お二人が手掛ける独自ブランド 「GAHGA」 と 「LAVALAVA GEARCLUB」 が特別出店します。<br class="pc">さらに、トークショー兼ミニライブ を開催！<br class="pc">音楽とアウトドア、そしてここでしか聞けない貴重なお話を楽しめる特別な機会です。<br class="pc">ぜひご期待ください！</p>
-              <p class="p-top-area_cnt-box-kyanos"><img src="./assets/img/top/kyanos.png" alt="キャノーズ"></p>
-              <p class="p-top-area_cnt-box-txt">レゲエアーティスト HISATOMI と APOLLO が、2024年にキャンプをきっかけに結成した<br class="pc">アウトドア型レゲエユニット 「キャノーズ」。<br class="pc">自然の中でのキャンプライフを背景に、自由で解放感あふれるレゲエサウンドを届ける<br class="pc">新しいスタイルのユニット。<br class="pc">音楽とアウトドアをクロスオーバーさせた唯一無二の活動を展開中。</p>
-              <div class="p-top-area_cnt-box-kyanos-flex">
-                <p class="p-top-area_cnt-box-kyanos-logo"><img src="./assets/img/top/kanos-lava-lava.svg" alt="LAVA LAVA GEAR CLUB"></p>
-                <p class="p-top-area_cnt-box-kyanos-logo"><img src="./assets/img/top/kanos-gahga.svg" alt="GAHAGA"></p>
-              </div>
-            </div>
-          </div> -->
-          <div id="STAGE02" class="p-top-area_cnt-box scroll-point">
-            <div class="box-corner box-corner1"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner2"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner3"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner4"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="p-top-area_cnt-box-inner">
-              <h2 class="p-top-area_cnt-box-ttl"><span class="en-ttl">SPECIAL CONTENTS</span><span class="ja-ttl">スペシャルコンテンツ</span></h2>
-              <!-- HOUYHNHNM media intro -->
-              <div class="p-top-sc-media">
-                <div class="p-top-sc-media-logo">
+              <div class="brand__inner section__inner">
+                <h2 class="special__headline section__headline">スペシャルコンテンツ</h2>
+                <div class="special__logo">
                   <img src="./assets/img/top/houyhnhnm.svg" alt="HOUYHNHNM">
                 </div>
-                <p class="p-top-area_cnt-box-txt">世の中にあふれる情報のなかから、ヒップなヒト、モノ、コトを見つけ、編集し、届けているWEBマガジン。「Magazine for the Hip」をテーマに、ファッションやカルチャー、ライフスタイルまで幅広く発信している。</p>
-              </div>
-              <!-- ① コラボグッズ販売 -->
-              <div class="p-top-sc-block">
-                <h3 class="p-top-sc-block-ttl">親交のあるブランドやショップとのコラボグッズを特別販売！</h3>
-                <p class="p-top-sc-lead">フイナムが親交のあるブランドとこれまでつくってきたコラボアイテムを販売いたします。直近でつくった以下の4つのコラボアイテムに加え、「the Apartment」や〈CITY COUNTRY CITY〉など、ここには載っていないアイテムも多数用意。普段はオンラインでのみの販売ですが、実際に手に取っていただける貴重な機会です！</p>
-                <ul class="p-top-sc-collab-list">
-                  <li class="iijima">
-                    <p class="p-top-sc-collab-brand-name">山荘飯島</p>
-                    <div class="p-top-sc-collab-logo">
-                      <img src="https://placehold.jp/498x282.png" alt="山荘飯島">
-                    </div>
-                    <p class="p-top-sc-collab-brand-txt">経堂のすずらん通り商店街を抜けた先に軒を構えるセレクトショップ。日常で着られるファッション性と、本格的なアウトドアシーンでも活躍する機能性を備えたアイテムを取り揃え、山と日常をシームレスに繋ぐ提案をしてる。</p>
-                    <p class="p-top-sc-collab-insta">instagram: <a href="https://www.instagram.com/sanso_iijima/" target="_blank" rel="noopener noreferrer">@sanso_iijima</a></p>
-                    <div class="p-top-sc-collab-img">
-                      <img src="https://placehold.jp/498x282.png" alt="山荘飯島 アイテム">
-                    </div>
-                    <p class="p-top-sc-collab-item-name">ダミーテキストダミーテキスト ¥11,000</p>
-                    <p class="p-top-sc-collab-txt">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
-                  </li>
-                  <li class="freshservice">
-                    <p class="p-top-sc-collab-brand-name">FreshService（フレッシュサービス）</p>
-                    <div class="p-top-sc-collab-logo">
-                      <img src="./assets/img/top/sc_fresh-service.svg" alt="FreshService">
-                    </div>
-                    <p class="p-top-sc-collab-brand-txt">ディレクターの南貴之さんが世界中で作られているものを独自の視点で再構築し、新たな製品として提案しているブランド。日用品から、ユニフォームやワークウエアをイメージした衣服まで、手に取るひとのライフスタイルを豊かにするアイテムを展開している。</p>
-                    <p class="p-top-sc-collab-insta">Instagram: <a href="https://www.instagram.com/sanso_iijima/" target="_blank" rel="noopener noreferrer">@sanso_iijima</a></p>
-                    <div class="p-top-sc-collab-img">
-                      <img src="https://placehold.jp/498x282.png" alt="FreshService アイテム">
-                    </div>
-                    <p class="p-top-sc-collab-item-name">FreshService × HOUYHNHNM UTILITY SHOOTING COAT ¥57,200</p>
-                    <p class="p-top-sc-collab-txt">“編集者のためのユニフォーム”をコンセプトに〈フレッシュサービス〉とつくった、ロケで重宝するコート。撮影時の必需品をこれでもかと詰め込める大容量ポケット、そして真冬の寒さをたやすく凌げるほどの防寒性を備えています。前回のリリースでは発売後に瞬く間に完売し好評だった通称”ロケジャン”を、防水シェルに変更、ポケット配置を使いやすいように見直してアップデート。</p>
-                  </li>
-                  <li class="rajabrooke">
-                    <p class="p-top-sc-collab-brand-name">rajabrooke（ラジャブルック）</p>
-                    <div class="p-top-sc-collab-logo">
-                      <img src="./assets/img/top/sc_rajabrooke.svg" alt="rajabrooke">
-                    </div>
-                    <p class="p-top-sc-collab-brand-txt">デザイナーが12年間過ごした東南アジアの文化と、日本人としての感性と音楽などのカルチャーを独自の感性でミックスしている日本発のブランド。ブランド名は、かつて昆虫コレクターが夢中になって追いかけたマレーシアの国蝶に由来。</p>
-                    <p class="p-top-sc-collab-insta">instagram: <a href="https://www.instagram.com/rajabrooke_asia/" target="_blank" rel="noopener noreferrer">@rajabrooke_asia</a></p>
-                    <div class="p-top-sc-collab-img">
-                      <img src="./assets/img/top/sc_rajabrooke-item.jpg" alt="rajabrooke アイテム">
-                    </div>
+                <p class="special__text">世の中にあふれる情報のなかから、ヒップなヒト、モノ、コトを見つけ、編集し、届けているWEBマガジン。「Magazine for the Hip」をテーマに、ファッションやカルチャー、ライフスタイルまで幅広く発信しています。<br>
+                  URL : <a href="https://www.houyhnhnm.jp/" target="_blank">https://www.houyhnhnm.jp/</a><br>
+                  Instagram : ＠<a href="https://www.instagram.com/houyhnhnm_official/" target="_blank">houyhnhnm_officail</a>
 
-                  <p class="p-top-sc-collab-item-name">rajabrooke（ラジャブルック） × HOUYHNHNM 編集者の風呂敷 ¥11,000</p>
-                    <p class="p-top-sc-collab-txt">
-                      “フイナムが考える『編集者の◯◯』”というテーマのもと、〈rajabrooke〉と一緒につくった超撥水風呂敷。バケツのように水を汲める強力な撥水加工が施されていて、荷物をくるんで背負ったり差し入れを包んで持ったり、雨が降ってきたら頭やバッグにサッと巻くこともできる便利アイテムです。カラーはネイビー×オフホワイト。個性的なアジアンバティック柄がコーディネートのアクセントとしても一役買ってくれます。<br>
-                      制作ストーリーは<a href="https://www.houyhnhnm.jp/feature/1116790/" target="_blank" rel="noopener noreferrer">こちら</a>、使用シーンのイメージは<a href="https://www.houyhnhnm.jp/feature/1116919/" target="_blank" rel="noopener noreferrer">こちら</a>から。
-                    </p>
-                  </li>
-                  <li class="zeptepi">
-                    <p class="p-top-sc-collab-brand-name">ZEPTEPI（ゼプテピ）</p>
-                    <div class="p-top-sc-collab-logo">
-                      <img src="./assets/img/top/sc_zeptepi.svg" alt="ZEPTEPI">
+                </p>
+                <div class="special__box">
+                  <!-- ① コラボグッズ販売 -->
+                   
+                    <div class="special__top">
+                      <p class="special__top-num special__top-num1">
+                        <img src="./assets/img/special/1.png" alt="">
+                      </p>
+                      <p class="special__top-lead">親交のあるブランドや<br class="sp">ショップとの<br>コラボグッズを特別販売！</p>
+                      <p class="special__top-text">フイナムが親交のあるブランドとこれまでつくってきたコラボアイテムを販売します。直近でつくった以下の4つのコラボアイテムに加え、「the Apartment」や「CITY COUNTRY CITY」など、ここには載っていないアイテムも多数用意しています。普段はオンラインでのみの販売ですが、実際に手に取っていただける貴重な機会です！</p>
                     </div>
-                    <p class="p-top-sc-collab-brand-txt">2011年にスタート。ダイニーマ®などの高機能素材を使ったバッグや、ミリタリーをサンプリングしたアイテムなどをリリース。これまでに〈WTAPS®〉〈UNDERCOVER〉〈ALWAYTH〉とのコラボも。</p>
-                    <p class="p-top-sc-collab-insta">instagram: <a href="https://www.instagram.com/_zeptepi_/" target="_blank" rel="noopener noreferrer">@_zeptepi_</a></p>
-                    <div class="p-top-sc-collab-img">
-                      <img src="./assets/img/top/sc_zeptepi-item.jpg" alt="ZEPTEPI アイテム">
-                    </div>
-                    <p class="p-top-sc-collab-item-name">編集者のバッグインバッグ＆名刺入れセット ¥7,700</p>
-                    <p class="p-top-sc-collab-txt">
-                      “フイナムが考える『編集者の◯◯』”というテーマのもと、〈ZEPTEPI〉と一緒につくったバッグインバッグと名刺入れのセット。素材はブランドの代名詞でもあるAvient社が開発した超高分子量ポリエチレン素材のダイニーマ®を使用しているので、軽くて耐久性があり、見た目もスタイリッシュ。サイズも数センチ単位でこだわりました。カラーはインラインでもこれまでのコラボでも無かった、ホワイト×O.D.とブルー×ブラックのツートーン。ちょっと透け感があるので、中身がわかるのもポイント。<br>
-                      制作ストーリーは<a href="https://www.houyhnhnm.jp/feature/1115194/" target="_blank" rel="noopener noreferrer">こちら</a>、使用シーンのイメージは<a href="https://www.houyhnhnm.jp/feature/1116868/" target="_blank" rel="noopener noreferrer">こちら</a>から。
+                    <ul class="special__list">
+                      
+                      <li class="special__brand freshservice">
+                        <p class="special__brand-name">FreshService<br>（フレッシュサービス）</p>
+                        <div class="special__brand-logo">
+                          <img src="./assets/img/special/fresh_logo.png" alt="FreshService">
+                        </div>
+                        <p class="special__brand-text">
+                          ディレクターの南貴之さんが世界中で作られているものを独自の視点で再構築し、新たな製品として提案しているブランド。日用品から、ユニフォームやワークウエアをイメージした衣服まで、手に取るひとのライフスタイルを豊かにするアイテムを展開しています。<br>
+                          Instagram: <a href="https://www.instagram.com/freshservice_official/" target="_blank" rel="noopener noreferrer">@freshservice_official</a><br><a href="https://freshservice.jp/" target="_blank">https://freshservice.jp/</a>
+                        </p>
+                        <div class="special__brand-item">
+                          <img src="./assets/img/special/fresh_item.png" alt="FreshService">
+                        </div>
+                        <p class="special__item-name">
+                          FreshService × HOUYHNHNM UTILITY SHOOTING COAT ¥57,200
+                        </p>
+                        <p class="special__item-txt">
+                          編集者のためのユニフォーム”をコンセプトに「FreshService」と製作したコート。外側に大きなポケットと内側に豊富な小分けのポケットを備えているから、外出時に必要なものを存分に収納できます。中綿入りで防寒性が高く、秋冬のキャンプや釣りにもぴったり。表地には撥水性を備えた3レイヤー素材「WEATHER SHIELD」を採用しているから、襟に収納されたフードを被れば軽い雨を凌げる優れものです。</p>
+                      </li>
+
+
+
+                      <li class="special__brand iijima">
+                        <p class="special__brand-name">山荘飯島</p>
+                        <div class="special__brand-logo">
+                          <img src="./assets/img/special/ijima_logo.png" alt="FreshService">
+                        </div>
+                        <p class="special__brand-text">
+                          経堂のすずらん通り商店街を抜けた先に軒を構えるセレクトショップ。日常で着られるファッション性と、本格的なアウトドアシーンでも活躍する機能性を備えたアイテムを取り揃え、山と日常をシームレスに繋ぐ提案をしています。<br>
+                          instagram: <a href="https://www.instagram.com/sanso_iijima/" target="_blank" rel="noopener noreferrer">@sanso_iijima</a><br><a href="https://sanso-iijima.com/" target="_blank">https://sanso-iijima.com/</a>
+                        </p>
+                        
+                        <div class="special__brand-item">
+                          <img src="./assets/img/special/ijima_item.png" alt="FreshService">
+                        </div>
+                        <p class="special__item-name">
+                          ミーティングベスト<br>¥19,800
+                        </p>
+                        <p class="special__item-txt">
+                          ロケ撮影のときも打ち合わせのときも着られるニュートラルな服があったらいいな。そんなフイナム編集部の想いから生まれたニットベスト。素材には通気性と保温性に優れたポーラーテック アルファ ダイレクトを採用し、「山荘飯島」が絶大な信頼を寄せる大手ブランドなどを手がける日本の工場で製造されてます。シルエットの参考にしたのは王道のトラッドスタイル。裾にドローコードを配すこと好みの丈感に調整できる仕様に。シンプルなデザインだから、山、街、ビジネスなど、あらゆるシーンやスタイリングになじみます。
+                        </p>
+                      </li>
+                      <li class="special__brand raja">
+                        <p class="special__brand-name">
+                          rajabrooke<br>（ラジャブルック）
+                        </p>
+                        <div class="special__brand-logo">
+                          <img src="./assets/img/special/raja_logo.png" alt="">
+                        </div>
+                        <p class="special__brand-text">デザイナーが12年間過ごした東南アジアの文化と、日本人としての感性と音楽などのカルチャーを独自の感性でミックスしている日本発のブランド。ブランド名は、かつて昆虫コレクターが夢中になって追いかけたマレーシアの国蝶に由来。<br>
+                          instagram: <a href="https://www.instagram.com/rajabrooke_asia/" target="_blank" rel="noopener noreferrer">@rajabrooke_asia</a><br><a href="https://www.rajabrooke.jp/" target="_blank">https://www.rajabrooke.jp/</a>
+                        </p>
+                        
+                        <div class="special__brand-item">
+                          <img src="./assets/img/special/raja_item.png" alt="FreshService">
+                        </div>
+
+                      <p class="special__item-name">編集者の風呂敷<br>¥11,000</p>
+                        <p class="special__item-txt">
+                          “フイナムが考える『編集者の◯◯』”というテーマのもと、「rajabrooke」と一緒につくった超撥水風呂敷。バケツのように水を汲める強力な撥水加工が施されていて、荷物をくるんで背負ったり差し入れを包んで持ったり、雨が降ってきたら頭やバッグにサッと巻くこともできる便利アイテムです。カラーはネイビー×オフホワイト。個性的なアジアンバティック柄がコーディネートのアクセントとしても一役買ってくれます。アウトドアシーンで濡れたチェアや地面に座るときにも活躍すること間違いなし。<br>
+                          制作ストーリーは<a href="https://www.houyhnhnm.jp/feature/1116790/" target="_blank" rel="noopener noreferrer">こちら</a>、使用シーンのイメージは<a href="https://www.houyhnhnm.jp/feature/1116919/" target="_blank" rel="noopener noreferrer">こちら</a>から。
+                        </p>
+                      </li>
+                      <li class="special__brand zeptepi">
+                        <p class="special__brand-name">ZEPTEPI<br>（ゼプテピ）</p>
+                        <div class="special__brand-logo">
+                          <img src="./assets/img/special/zeptepi.png" alt="ZEPTEPI">
+                        </div>
+
+                        <p class="special__brand-text">2011年にスタート。ダイニーマ®などの高機能素材を使ったバッグや、ミリタリーをサンプリングしたアイテムなどをリリースしています。これまでに「WTAPS®」「UNDERCOVER」「ALWAYTH」とのコラボも。<br>
+                        instagram: <a href="https://www.instagram.com/_zeptepi_/" target="_blank" rel="noopener noreferrer">@_zeptepi_</a><br><a href="https://www.zeptepiandco.com/" target="_blank">https://www.zeptepiandco.com/</a>
+                      </p>
+                        
+                        <div class="special__brand-item">
+                          <img src="./assets/img/special/zeptepi_item.png" alt="ZEPTEPI">
+                        </div>
+                        <p class="special__item-name">編集者のバッグインバッグ＆名刺入れセット ¥7,700</p>
+                        <p class="special__item-txt">
+                          “フイナムが考える『編集者の◯◯』”というテーマのもと、「ZEPTEPI」と一緒につくったバッグインバッグと名刺入れのセット。素材にダイニーマ®を使用することでスタイリッシュな見た目に。もちろん軽さと耐久性も抜群です。サイズも数センチ単位でこだわり使いやすさを追求。カラーはホワイト×O.D.とブルー×ブラックのツートーン。ちょっと透け感があるので中身がわかるのもポイントです。アウトドアの際に、財布代わりにしたり、濡らしたくない小物をまとめておくのにも良さそうです。<br>
+                          制作ストーリーは<a href="https://www.houyhnhnm.jp/feature/1115194/" target="_blank" rel="noopener noreferrer">こちら</a>、使用シーンのイメージは<a href="https://www.houyhnhnm.jp/feature/1116868/" target="_blank" rel="noopener noreferrer">こちら</a>から。
+                        </p>
+                      </li>
+                    </ul>
+                  
+                  <div class="special__top">
+                    <p class="special__top-num special__top-num2">
+                      <img src="./assets/img/special/2.png" alt="">
                     </p>
-                  </li>
-                </ul>
-              </div>
-              <!-- ② クリエイターフリマ -->
-              <div class="p-top-sc-block">
-                <h3 class="p-top-sc-block-ttl">（仮）山荘飯島と愉快な仲間たち</h3>
-                <p class="p-top-sc-coming">COMING SOON...</p>
-              </div>
-              <!-- ③ アクティブブランドの展示販売 -->
-              <div class="p-top-sc-block">
-                <h3 class="p-top-sc-block-ttl">（仮）グルランも開催！ フランス発〈ACT Running〉が大阪にやってくる。</h3>
-                <p class="p-top-sc-coming">COMING SOON...</p>
+                    <p class="special__top-lead">豪華メンバーによる<br>ポップアップ！</p>
+                    <div class="special__top-soon">
+                      <img src="./assets/img/special/soon.png" alt="">
+                    </div>
+                  </div>
+                  <div class="special__top">
+                    <p class="special__top-num special__top-num3">
+                      <img src="./assets/img/special/3.png" alt="">
+                    </p>
+                    <p class="special__top-lead">グルランも開催！<br>フランス発「ACT Running」が<br>大阪にやってくる。</p>
+                    <div class="special__top-soon">
+                      <img src="./assets/img/special/soon.png" alt="">
+                    </div>
+                  </div>
+                  
+                </div>
               </div>
             </div>
           </div>
-          <!-- <div id="STAGE03" class="p-top-area_cnt-box -outdoor scroll-point">
-            <div class="box-corner box-corner1"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner2"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner3"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner4"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="p-top-area_cnt-box-inner">
-              <h2 class="p-top-area_cnt-box-ttl"><span class="en-ttl">STAGE</span><span class="ja-ttl">ステージ</span></h2>
-              <div class="p-top-area_cnt-box-subtitle -outdoor -text"><span>アウトドア×防災トークショー<br>― 地元の名産を使った<br class="sp">レトルトフードを味わいながら、<br>“もしも"にそなえる知恵を楽しく学ぼう―</span></div>
-              <div class="p-top-area_cnt-box-dp"><span>11/3</span> (月祝)</div>
-              <div class="p-top-area_cnt-box-dp -mt0">①<span>12:00～12:30</span>　②<span>13:00～13:30</span></div>
-              <p class="p-top-area_cnt-box-txt">①被災知見を付加価値に、<br class="sp">発酵食品大国の美味しい非常食の世界</p>
-              <p class="p-top-area_cnt-box-outdoor"><img src="./assets/img/top/one-pot-wonder.png" alt="one pot wonder"></p>
-              <div class="p-top-area_cnt-box-outdoor-flex-box">
-                <p class="p-top-area_cnt-box-outdoor-flex-box-textarea-title sp">Bench Susumu Sasaki<br>ONE POT WONDER <br class="sp">プロデューサー</p>
-                <div class="p-top-area_cnt-box-outdoor-flex-box-img"><img src="./assets/img/top/outdoor_img.jpg" alt=""></div>
-                <div class="p-top-area_cnt-box-outdoor-flex-box-textarea">
-                  <p class="p-top-area_cnt-box-outdoor-flex-box-textarea-title pc">Bench Susumu Sasaki<br>ONE POT WONDER プロデューサー</p>
-                  <p class="p-top-area_cnt-box-outdoor-flex-box-textarea-text">アパレルやフードブランドのプロデュースやリブランディングを行う傍ら、アーティストとしても活動。<br>能登が持つ付加価値と、アウトドアのセンスで、美味しい非常「KNOTOメシ」をJackery Japanとともに立ち上げる。</p>
-                  <a class="btn" href="https://onepotwonder.jp/?srsltid=AfmBOoo9M7eghLBN7mmT0kvg-6RPtzMTwK3SkyDrmAr-rrgFOHFHKKt7" target="_blank" rel="noopener noreferrer">URLはこちら</a>
-                </div>
+          
+          <div id="sponsor" class="scroll-point sponsor section-wrap">
+            <div class="section-contents">
+              <div class="section-logo">
+                <img src="./assets/img/sponsor/sponsor.png" alt="">
               </div>
-              <p class="p-top-area_cnt-box-txt">②アウトドアのセンスで避難生活を楽しむ準備。<br class="sp">大阪が備えるべき防災対策</p>
-            </div>
-          </div> -->
-          <!-- <div id="food" class="p-top-area_cnt-box scroll-point">
-            <div class="box-corner box-corner1"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner2"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner3"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner4"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="p-top-area_cnt-box-inner">
-              <h2 class="p-top-area_cnt-box-ttl"><span class="en-ttl">FOOD & DRINK</span><span class="ja-ttl">フード&amp;ドリンク</span></h2>
-              <div class="p-top-area_cnt-box-dp"><span>11/2</span> (土)<span>・3</span> (日) <span>11:00～17:00</span><br><span>1F</span> なんばカーニバルモール</div>
-              <div class="p-top-area_cnt-box-txtWrap">
-                <p class="p-top-area_cnt-box-txtWrap-txt">「大阪木津市場×A&Fカントリーコラボ企画！<br>地元ミナミの大阪木津市場の食材などを使った “コリアンアウトドアご飯"ブース<br>A&Fカントリーで取り扱うスキレット等を使って、ソトはもちろん、家でも楽しめる<br>アウトドアご飯を提供します！」<br>出店：コリアンキッチン シジャン、 マルトマ市場（苫小牧市公設地方卸売市場）</p> -->
-          <!-- <picture>
-                  <source media="(min-width: 769px)" srcset="./assets/img/top/fd_logo01.svg">
-                  <img src="./assets/img/top/fd_logo01_sp.svg" alt="大阪木津卸売市場（市場開設者：株式会社グルメ杵屋） A&F COUNTRY">
-                </picture> -->
-          <!-- </div>
-              <div class="p-top-area_cnt-box-logoWrap">
-                <div class="logo">
-                  <div class="logo_img"><img src="./assets/img/top/fd_img1_logo1.jpg" alt=""></div>
-                  <div class="logo_img"><img src="./assets/img/top/fd_img1_logo2.png" alt=""></div>
+              <div class="sponsor__inner section__inner">
+                <h2 class="sponsor__headline section__headline">協賛</h2>
+                <div class="sponsor__logo">
+                  <img src="./assets/img/sponsor/logo.png" alt="">
                 </div>
-                <div class="logo">
-                  <img src="./assets/img/top/fd_logo01_sp.svg" alt="大阪木津卸売市場（市場開設者：株式会社グルメ杵屋） A&F COUNTRY">
-                </div>
-              </div> -->
-          <!-- <div class="p-top-area_cnt-box-img"> -->
-          <!-- <picture>
-                  <source media="(min-width: 769px)" srcset="./assets/img/top/fd_img1.jpg">
-                  <img src="./assets/img/top/fd_img1_sp.jpg" alt="大阪木津卸売市場 画像">
-                </picture> -->
-          <!-- </div> -->
-          <!-- <ul class="p-top-area_cnt-box-att">
-                <li>※なんばカーニバルモールでのお買上金額は、駐車場優待サービスの対象となりませんので、あらかじめご了承ください。</li>
-              </ul>
-            </div>
-          </div> -->
-          <div id="sponsor" class="p-top-area_cnt-box scroll-point">
-            <div class="box-corner box-corner1"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner2"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner3"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner4"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="p-top-area_cnt-box-inner">
-              <h2 class="p-top-area_cnt-box-ttl"><span class="en-ttl">SPONSOR</span><span class="ja-ttl">協賛</span></h2>
-              <div class="p-top-sponsor-logo">
-                <img src="./assets/img/top/sponsor_miyazaki.png" alt="日本のひなた宮崎県">
-              </div>
-              <p class="p-top-area_cnt-box-txt">
-                「宮崎県産乾しいたけ」が、なんばソトフェスに登場！<br>
+                <p class="sponsor__text">
                   宮崎県は全国第二位の乾しいたけの産地です。<br>
                   なんばソトフェスでは、宮崎県産乾しいたけの魅力を"見て・食べて・体験できる"ブースをご用意しました。<br>
-                  大人気の「乾しいたけ詰め放題」をはじめ、乾しいたけの旨味を楽しめる加工品販売や、だしの試飲・しいたけの魅力を学べる体験コーナーなど、<br>
+                  大人気の「乾しいたけ詰め放題」をはじめ、乾しいたけの旨味を楽しめる加工品販売や、<br>
+                  だしの試飲・しいたけの魅力を学べる体験コーナーなど、<br>
                   ご家族で楽しめるコンテンツを多数実施します。<br>
-                  宮崎県産乾しいたけが織りなす、新しい"UMAMI"をぜひご賞味ください。</p>
-            </div>
-          </div>
-          <div id="access" class="p-top-area_cnt-box scroll-point">
-            <div class="box-corner box-corner1"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner2"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner3"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner4"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="p-top-area_cnt-box-inner">
-              <h2 class="p-top-area_cnt-box-ttl"><span class="en-ttl">ACCESS</span><span class="ja-ttl">アクセス</span></h2>
-              <div class="p-top-access-map">
-                <iframe
-                  src="https://maps.google.com/maps?q=なんばパークス+大阪市浪速区難波中2-10-70&output=embed&hl=ja&z=16"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  title="なんばパークス アクセスマップ"
-                ></iframe>
-              </div>
-              <p class="p-top-access-address">〒556-0011 大阪市浪速区難波中2-10-70</p>
-              <div class="p-top-access-info">
-                <div class="p-top-access-info-map">
-                  <img src="./assets/img/top/access_train_map.png" alt="周辺地図">
-                </div>
-                <div class="p-top-access-info-station">
-                  <p class="p-top-access-station-ttl">最寄り駅</p>
-                  <ul class="p-top-access-station-list">
-                    <li>南海電鉄「なんば駅」直結</li>
-                    <li>地下鉄御堂筋線「なんば駅」より徒歩約7分</li>
-                    <li>地下鉄千日前線「なんば駅」より徒歩約10分</li>
-                    <li>地下鉄四つ橋線「なんば駅」より徒歩約15分</li>
-                    <li>阪神なんば線「大阪難波駅」より徒歩約10分</li>
-                    <li>近鉄難波線(奈良線)「大阪難波駅」より徒歩約10分</li>
-                    <li>JR関西本線（大和路線）<br>「JR難波駅」(OCAT)北出口より徒歩約15分</li>
-                  </ul>
-                </div>
+                  宮崎県産乾しいたけが織りなす、新しい"UMAMI"をぜひご賞味ください。
+                </p>
               </div>
             </div>
           </div>
-          <!-- <div id="lottery" class="p-top-area_cnt-box scroll-point">
-            <div class="box-corner box-corner1"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner2"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner3"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner4"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="p-top-area_cnt-box-inner">
-              <h2 class="p-top-area_cnt-box-ttl"><span class="en-ttl">LOTTERY</span><span class="ja-ttl">抽選会</span></h2>
-              <div class="p-top-area_cnt-box-dp">
-                <span>11/1</span> (土) 〜<span>11/2</span> (月祝) <span>11:00</span>〜<span>20:00</span><br>
-                <span>11/3</span> (月祝) <span>11:00</span>〜<span>19:00</span>
+          <div id="access" class="scroll-point access section-wrap">
+            <div class="section-contents">
+              <div class="section-logo">
+                <img src="./assets/img/access/access.png" alt="">
               </div>
-              <p class="p-top-area_cnt-box-txt">
-                4F センターブリッジ（館内）<br>期間中、対象店舗で3,000円（税込）毎のお買い上げでなんばまるっとアプリ上で1回抽選が可能<br>※参加にはなんばまるっとアプリのダウンロードが必要です。
-              </p>
-              <div class="qr-flex">
-                <div class="qr-item">
-                  <div class="qr-img"><img src="./assets/img/top/qr_ios.png" alt="iPhone用QRコード"></div>
-                  <p class="qr-text">iPhone用</p>
-                  <a class="qr-link" href="https://yappli.plus/namba-marutto_hp" target="_blank" rel="noopener noreferrer">ダウンロードは<br>こちら</a>
+              <div class="access__inner section__inner">
+                <h2 class="access__headline section__headline">アクセス</h2>
+                <div class="access__map">
+                  <iframe
+                    src="https://maps.google.com/maps?q=なんばパークス+大阪市浪速区難波中2-10-70&output=embed&hl=ja&z=16"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="なんばパークス アクセスマップ"
+                  ></iframe>
                 </div>
-                <div class="qr-item">
-                  <div class="qr-img"><img src="./assets/img/top/qr_android.png" alt="Android用QRコード"></div>
-                  <p class="qr-text">Android用</p>
-                  <a class="qr-link" href="https://yappli.plus/namba-marutto_hp" target="_blank" rel="noopener noreferrer">ダウンロードは<br>こちら</a>
+                <p class="access__address">〒556-0011 大阪市浪速区難波中2-10-70</p>
+                <div class="access__info">
+                  <div class="access__info-map">
+                    <img src="./assets/img/top/access_train_map.png" alt="周辺地図">
+                  </div>
+                  <div class="access__info-station">
+                    <p class="access__info-station-ttl">最寄り駅</p>
+                    <ul class="access__info-station-list">
+                      <li>南海電鉄「なんば駅」直結</li>
+                      <li>地下鉄御堂筋線「なんば駅」より徒歩約7分</li>
+                      <li>地下鉄千日前線「なんば駅」より徒歩約10分</li>
+                      <li>地下鉄四つ橋線「なんば駅」より徒歩約15分</li>
+                      <li>阪神なんば線「大阪難波駅」より徒歩約10分</li>
+                      <li>近鉄難波線(奈良線)「大阪難波駅」より徒歩約10分</li>
+                      <li>JR関西本線（大和路線）<br>「JR難波駅」(OCAT)北出口より徒歩約15分</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <p class="p-top-area_cnt-box-txt">
-                上限は1人5回まで（15,000円以上のお買い上げでも5回まで）<br>抽選会場で対象店舗のレシート、もしくは抽選券を提示すると参加可能。
-              </p>
-              <p class="p-top-area_cnt-box-txt">
-                【なんばパークス】<br>（レシート） アルペンアウトドアーズ、 A＆Fカントリー、オレンジ、 KC‘ｓ、ＢＥＡＶＥＲ
-              </p>
-              <p class="p-top-area_cnt-box-txt">
-                【なんばCITY】<br>（レシート） #ワークマン女子、ウッディーハウス
-              </p>
-              <p class="p-top-area_cnt-box-txt">
-                【カーニバルモール】<br>（抽選券）出店店舗
-              </p>
-              <div class="p-top-area_cnt-box-img">
-                <picture>
-                  <source media="(min-width: 769px)" srcset="./assets/img/top/lo_img1.jpg">
-                  <img src="./assets/img/top/lo_img1_sp.jpg" alt="抽選会 画像">
-                </picture>
+              <div class="fes-attention">
+                <ul class="fes__precautions">
+                  <li>●天候不良、その他の事情により中止する場合がございます。</li>
+                  <li>●出展店舗・イベント内容は予告なく変更する場合がございます。</li>
+                  <li>●飲酒運転防止のため、お車でご来場の方の飲酒は堅くお断りいたします。</li>
+                </ul>
+                <div class="fes__infomation">
+                  <dl>
+                    <dt>主催：</dt>
+                    <dd>株式会社NANKAI</dd>
+                  </dl>
+                  <dl>
+                    <dt>協力：</dt>
+                    <dd>
+                      <a href="https://asomatous.jp/" target="_blank" rel="noopener noreferrer">株式会社 ASOMATOUS </a><br>
+                      <a href="https://www.ochw.ac.jp/gakka/" target="_blank" rel="noopener noreferrer">大阪保健福祉専門学校 </a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>後援：</dt>
+                    <dd>J:COM</dd>
+                  </dl>
+                </div>
               </div>
             </div>
-          </div> -->
-          <!-- <div id="takashimaya" class="p-top-area_cnt-box scroll-point">
-            <div class="box-corner box-corner1"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner2"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner3"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="box-corner box-corner4"><img class="pc" src="./assets/img/top/box_corner.svg"><img class="sp" src="./assets/img/top/box_corner_sp1.svg"></div>
-            <div class="p-top-area_cnt-box-inner">
-              <h2 class="p-top-area_cnt-box-ttlLogo"><img src="./assets/img/top/logo_takashimaya.svg" alt="OSAKA Takashimaya"></h2>
-              <div class="p-top-area_cnt-box-dp -ls"><span>10/31</span> (木)<span>〜11/4</span> (月・祝) <span>10:00～19:00</span><br><span>7F</span> 催会場</div>
-              <p class="p-top-area_cnt-box-txt">「キャンプと釣り」をテーマに初心者から上級者まで楽しめる釣り用品や<br class="pc">日常とシームレスに使えるアイテムが勢揃い。</p>
-              <div class="p-top-area_cnt-box-img">
-                <picture>
-                  <source media="(min-width: 769px)" srcset="./assets/img/top/takashimaya_img1.jpg">
-                  <img src="./assets/img/top/takashimaya_img1_sp.jpg" alt="髙島屋 画像">
-                </picture>
-              </div>
-              <ul class="p-top-area_cnt-box-att">
-                <li>※詳しくは高島屋大阪店ホームページをご覧ください</li>
-              </ul>
-            </div>
-          </div> -->
+          </div>
+          
         </div>
       </section>
-      <div class="p-top-cat_cnt-lArea">
-        <div class="p-top-cat_cnt-lArea-cnt c-inner">
-          <ul class="p-top-cat_cnt-lArea-list">
-            <li>●天候不良、その他の事情により中止する場合がございます。</li>
-            <li>●出展店舗・イベント内容は予告なく変更する場合がございます。</li>
-            <li>●飲酒運転防止のため、お車でご来場の方の飲酒は堅くお断りいたします。</li>
-          </ul>
-          <div class="p-top-cat_cnt-lArea-info">
-            <dl>
-              <dt>主催：</dt>
-              <dd>株式会社NANKAI</dd>
-            </dl>
-            <dl>
-              <dt>後援：</dt>
-              <dd>J:COM</dd>
-            </dl>
-            <dl>
-              <dt>協力：</dt>
-              <dd>
-                <a href="https://asomatous.jp/" target="_blank" rel="noopener noreferrer">株式会社 ASOMATOUS <img src="./assets/img/common/icon-window.svg"></a>
-                <a href="https://www.ochw.ac.jp/gakka/" target="_blank" rel="noopener noreferrer">大阪保健福祉専門学校 <img src="./assets/img/common/icon-window.svg"></a>
-              </dd>
-            </dl>
-          </div>
-        </div>
-      </div>
     </div>
-
-
   </main>
 
 
   <!-- footer -->
-  <footer class="l-ft">
-    <div class="l-ft_cnt c-outer">
-      <div class="l-ft_cnt-logo">
+  <footer class="fes-footer">
+    <div class="fes-footer__inner">
+      <div class="fes-footer__logo">
         <img src="./assets/img/common/ft_logo.svg" alt="NAMBA SOTOFES VOL.5 2026 都市型アウトドアイベント なんばソトフェス" width="176" height="115">
       </div>
-      <div class="l-ft_cnt-iconWrap">
-        <ul class="l-ft_cnt-icon">
-          <li><a href="https://nambaparks.com/"><img src="./assets/img/common/namba_parks_bnr.svg" alt="NANMA parks" width="100" height="100"></a></li>
-          <li><a href="https://nambacity.com/"><img src="./assets/img/common/namba_city_bnr.svg" alt="namba CITY nankai" width="100" height="100"></a></li>
-        </ul>
-        <p class="l-ft_cnt-logo-cp">&copy; Namba Soto Fes. All Rigts Reserved.</p>
-      </div>
+      <ul class="fes-footer__icon">
+        <li><a href="https://nambaparks.com/"><img src="./assets/img/common/namba_parks_bnr.svg" alt="NANMA parks" width="100" height="100"></a></li>
+        <li><a href="https://nambacity.com/"><img src="./assets/img/common/namba_city_bnr.svg" alt="namba CITY nankai" width="100" height="100"></a></li>
+      </ul>
     </div>
+    <p class="fes-footer__copy"><img src="./assets/img/access/copy.png" alt="Namba Soto Fes. All Rigts Reserved."></p>
   </footer>
 
 

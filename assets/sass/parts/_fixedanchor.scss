@@ -1,0 +1,126 @@
+@use "./mixin" as *;
+
+.p-top {
+    .fixed-nav {
+        position: fixed;
+        top: 0px;
+        z-index: 50;
+        padding: spf(11) spf(10);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        justify-content: space-between;
+        opacity: 0;
+        transform: translateY(-100px);
+        visibility: hidden;
+        transition: opacity 0.2s ease, visibility 0.2s ease ,transform .8s ease;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background-color: #d97b50ba;
+            mix-blend-mode: multiply;
+        }
+        &.on {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        &__list{
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+            justify-content: space-between;
+            > li{
+                a{
+                    color: $yellow;
+                    font-weight: 600;
+                    font-size: spf(8);
+                    line-height: 1;
+                    white-space: nowrap;
+                }
+            }
+        }
+        &__inner{
+            display: flex;
+            flex-direction: column-reverse;
+            width: spf(258);
+            
+        }
+        &__logo{
+            width: spf(82.03);   
+        }
+        &__logos{
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+            justify-content: space-between;
+            .nav__insta{
+                width: spf(16.46);
+            }
+            .nav__namba{
+                width: spf(78.1);
+            }
+            .nav__date{
+                width: spf(153.48);
+            }
+        }
+        .nav-img{
+            line-height: 0;
+        }  
+        @include pc{
+            padding: pcf(11) pcf(10);
+            height: pcf(140);
+            max-height: 140px;
+            &__list{
+                margin: 0 auto;
+                gap: pcf(80);
+                > li{
+                    a{
+                        font-size: pcf(28);
+                    }
+                }
+            }
+            &__inner{
+                flex-direction: row;
+                width: 100%;
+
+            }
+            &__logo{
+                width: pcf(170);   
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: pcf(37);
+            }
+            &__logos{
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+                position: absolute;
+                width: pcf(236.17);
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: pcf(37);
+
+                .nav__insta{
+                    width: pcf(38.75);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .nav__namba{
+                    width: pcf(183.05);
+                    margin: 0 0 0 auto;
+                }
+                .nav__date{
+                    width: 100%;
+                    margin-top: pcf(16);
+                }
+            }
+        } 
+    }
+}

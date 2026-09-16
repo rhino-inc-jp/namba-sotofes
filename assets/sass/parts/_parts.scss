@@ -1,0 +1,83 @@
+@use "./mixin" as *;
+
+body{
+    font-family: ryo-gothic-plusn, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+.en{
+font-family: gotham, sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+
+.ja_m{
+font-family: ryo-gothic-plusn, sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.ja_b{
+font-family: ryo-gothic-plusn, sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.ja_h{
+font-family: ryo-gothic-plusn, sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+
+.wrapper{
+    overflow: hidden;
+}
+
+.section-wrap{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    .section-contents{
+        position: relative;
+    }
+    .section-logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: spf(37);
+        line-height: 0;
+    }
+    .section__inner{
+        width: spf(302);
+        margin: 0 spf(15) 0 auto;
+    }
+    .section__headline{
+        font-size: spf(20);
+        line-height: 1;
+        font-weight: 700;
+    }
+    @include pc{
+        .section-contents{
+            width: pcf(819);
+            margin: 0 auto;
+        }
+        .section-logo{
+            width: pcf(70);
+        }
+        .section__inner{
+            width: pcf(700);
+            margin: 0 0 0 auto;
+        }
+        .section__headline{
+            font-size: pcf(40);
+        }        
+    }
+}
+
+.p-top-area{
+    padding: 0!important;
+    margin: 0!important;
+}

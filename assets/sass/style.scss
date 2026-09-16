@@ -26,7 +26,7 @@
 @use "utility/_utility";
 
 //layout/（レイアウト部分の管理）
-@use "layout/footer";
+// @use "layout/footer";
 @use "layout/header";
 @use "layout/main";
 @use "layout/sidebar";
@@ -37,3 +37,13 @@
 // @use "project/*.scss";
 @use "project/top";
 
+
+@use "parts/mv";
+@use "parts/fixedanchor";
+@use "parts/about";
+@use "parts/brand";
+@use "parts/parts";
+@use "parts/special";
+@use "parts/sponsor";
+@use "parts/access";
+@use "parts/footer";

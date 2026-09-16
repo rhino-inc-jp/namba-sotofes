@@ -1,5 +1,5 @@
-@use "setting/mixin" as *;
-@use "setting/calc" as *;
+@use "../setting/mixin" as *;
+@use "../setting/calc" as *;
 
 .c-flex {
     &-col2 {

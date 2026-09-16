@@ -1,0 +1,54 @@
+@use "./mixin" as *;
+
+.fes-footer{
+    padding: spf(18) spf(35) spf(14);
+    background: #EBCC60;
+    border-top: solid 1px #000;
+    &__inner{
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        justify-content: space-between;
+    }
+    &__logo{
+        width: spf(92.5);
+        line-height: 0;
+    }
+    &__icon{
+        display: flex;
+        width: spf(117);
+        justify-content: space-between;
+        > li{
+            width: spf(52.58);
+            line-height: 0;
+            display: block;
+            a{
+                width: 100%;
+                height: 100%;
+
+            }
+        }
+    }
+
+    &__copy{
+        width: spf(166);
+        margin: spf(18) auto 0;
+    }
+    @include pc{
+        padding: pcf(35) pcf(443);
+        &__logo{
+            width: pcf(153.19);
+        }
+        &__icon{
+            width: pcf(170);
+            > li{
+                width: pcf(76.44);
+            }
+        }
+
+        &__copy{
+            width: pcf(170.09);
+            margin: pcf(6) 0 0 auto ;
+        }        
+    }
+}

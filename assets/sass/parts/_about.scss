@@ -1,0 +1,25 @@
+@use "./mixin" as *;
+
+.about{
+    color: #EEE1C3;
+    background: #568DB8;
+    padding: spf(46.5) 0;
+      
+    &__text{
+        font-size: spf(12);
+        line-height: calc(22/ 12);
+        margin-top: spf(20);
+    }
+    @include pc{
+        padding: pcf(57) 0 pcf(127);
+        &__headline{
+            padding-top: pcf(58);
+        }
+        &__text{
+            font-size: pcf(18);
+            margin-top: pcf(21);
+            width: 100%;
+            font-feature-settings: "palt";
+        }
+    }
+}

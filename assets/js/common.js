@@ -1,3 +1,21 @@
+$(function () {
+  opning();
+});
+function tick(time) {
+  return new Promise((resolve) => {
+    setTimeout(function () {
+      resolve()
+    }, time)
+  })
+}
+async function opning() {
+  $('.p-top-mv').addClass('start');
+  await tick(1500);
+  $('.logo-wrap').addClass('show');
+  
+}
+
+
 // =================================
 // アンカーリンク
 // =================================
@@ -118,8 +136,8 @@ $(document).ready(function () {
         },
     });
 
-    // p-top-area_cnt-box-logo内のliタグがクリックされた時
-    $('.p-top-area_cnt-box-logo li').on('click', function () {
+    // brand-list内のliタグがクリックされた時
+    $('.brand-list li').on('click', function () {
         // クリックされたliタグのdata-slide属性の値を取得
         const slideIndex = $(this).data('slide');
 
@@ -156,11 +174,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const areaPosition = areaElement.getBoundingClientRect().top;
 
         // 画面の上端に達した場合にjs-fixedにonクラスを付与
-        // if (areaPosition <= 0) {
-        //     fixedElement.classList.add('on');
-        // } else {
-        //     fixedElement.classList.remove('on');
-        // }
+        if (areaPosition <= 0) {
+            fixedElement.classList.add('on');
+        } else {
+            fixedElement.classList.remove('on');
+        }
     });
 });
 

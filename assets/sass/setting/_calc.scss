@@ -1,9 +1,10 @@
 @use "sass:math";
+@use "sass:meta";
 
 // vwの記述（SP）
 $base-window-width-sp: 375px !default;
 @function trimSp($numberSp) {
-  @if type-of($numberSp) == "number" and not unitless($numberSp) {
+  @if meta.type-of($numberSp) == "number" and not math.is-unitless($numberSp) {
     @return math.div($numberSp, ($numberSp * 0 + 1));
   }
   @return $numberSp;

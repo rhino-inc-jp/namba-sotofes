@@ -16,12 +16,10 @@ $pc_vw: 1400;
   }
 }
 @mixin pc {
-  @media only screen and (min-width: $media-sp+1 ) {
-    @content;  
+  @media screen and (min-width: 769px) {
+    @content;
   }
 }
-
-
 
 
 

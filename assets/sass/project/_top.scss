@@ -1,156 +1,17 @@
-@use "setting/mixin" as *;
-@use "setting/calc" as *;
+@use "../setting/mixin" as *;
+@use "../setting/calc" as *;
 
 .p-top {
-    &-mv {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        &_cnt {
-            margin-inline: auto;
-            max-width: 1510px;
-        }
-    }
-    .wrapper {
-        margin-top: 53.7%;
-        padding-top: 66px;
-        background-color: var(--bgOraCol);
-        position: relative;
-    }
-    .fixed {
-        position: sticky;
-        top: 0px;
-        z-index: 10;
-        background-color: var(--bgOraCol);
-        padding-top: 20px;
-        padding-bottom: 20px;
-        &_cnt {
-            position: relative;
-            z-index: 10;
-        }
-        .insta {
-            width: fit-content;
-            display: block;
-            margin-bottom: 31px;
-            position: relative;
-            svg {
-                width: 40px;
-                display: block;
-                margin-inline: auto;
-                margin-bottom: 8px;
-                .cls-1 {
-                    transition: all 0.3s;
-                }
-            }
-            &-text {
-                color: #ede1c2;
-                white-space: nowrap;
-                font-size: 1.4rem;
-            }
-        }
-        .menu {
-            width: 28px;
-            margin-left: auto;
-            margin-bottom: 0;
-            margin-top: -56px;
-            cursor: pointer;
-            .hmb {
-                width: 100%;
-                height: 14px;
-                position: relative;
-                span {
-                    position: absolute;
-                    background-color: var(--bgBgCol);
-                    height: 2px;
-                    width: 100%;
-                    display: block;
-                    transition: all 0.3s;
-                    &:nth-of-type(1) {
-                        top: 0;
-                        left: 50%;
-                        transform: translateX(-50%);
-                    }
-                    &:nth-of-type(2) {
-                        top: 50%;
-                        left: 50%;
-                        transform: translateX(-50%);
-                    }
-                    &:nth-of-type(3) {
-                        top: 100%;
-                        left: 50%;
-                        transform: translateX(-50%);
-                    }
-                }
-            }
-            .txt {
-                font-size: 1.6rem;
-                font-weight: bold;
-                font-family: "din-condensed-bold";
-                color: var(--txtBgCol);
-                // letter-spacing: 0;
-                letter-spacing: -0.02em;
-                white-space: nowrap;
-                margin-top: 6px;
-                transition: all 0.3s;
-            }
-        }
-        &.on {
-            .insta {
-                svg {
-                    .cls-1 {
-                        fill: var(--wht);
-                    }
-                }
-            }
-            .menu {
-                .hmb {
-                    span {
-                        background-color: var(--wht);
-                    }
-                }
-                .txt {
-                    color: var(--wht);
-                }
-            }
-        }
-    }
-    .wrapper {
-        @media screen and (min-width: 1510px) {
-            margin-top: 810px;
-        }
-    }
-    &-ld {
-        margin-top: -61px;
-        position: relative;
-        z-index: 1;
-        background-color: var(--bgOraCol);
-        &_cnt {
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-            &-lft {
-                width: 142px;
-            }
-            &-center {
-                width: 199px;
-                position: relative;
-                left: 41px;
-            }
-            &-rgt {
-                width: 224px;
-            }
-        }
-    }
+    background-color: var(--bgOraCol);
+    
+    
     &-area {
-        padding-top: 35px;
         position: relative;
         background-color: var(--bgOraCol);
         &_cnt {
             &-box {
                 background-color: var(--bgBgCol);
                 position: relative;
-                padding: 9px;
                 &:not(:first-of-type) {
                     margin-top: 50px;
                 }
@@ -202,7 +63,7 @@
                     }
                 }
                 &-inner {
-                    border: 2px solid var(--bgOraCol);
+                    // border: 2px solid var(--bgOraCol);
                     padding: 38px 36px;
                 }
                 &-ttl {
@@ -933,15 +794,6 @@
 
 @include sp {
     .p-top {
-        &-mv {
-            &_cnt {
-                padding-top: vwsp(0);
-            }
-        }
-        .wrapper {
-            padding-top: vwsp(38);
-            margin-top: vwsp(647);
-        }
         .fixed {
             // top: vwsp(17);
             top: vwsp(0);
