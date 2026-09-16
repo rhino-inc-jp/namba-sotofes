@@ -25,6 +25,7 @@
         a{
             color: #EEE1C3;
         }
+        
     }
     &__box{
         width: 100%;
@@ -78,6 +79,7 @@
             font-size: spf(12);
             line-height: calc(22 / 12);
             margin-top: spf(24);
+            
         }
         &-soon{
             width: spf(202.54);
@@ -159,6 +161,9 @@
         &-text{
             font-size: spf(10);
             line-height: calc(19 / 10);
+            a{
+                text-decoration: underline;
+            }
         }
         &-logo,&-item{
             line-height: 0;
@@ -179,8 +184,8 @@
                 line-height: calc(21 / 15);
             }
             &-text{
-                font-size: pcf(10);
-                line-height: calc(19 / 10);
+                font-size: pcf(13);
+                line-height: calc(25 / 13);
             }
         }
     }
@@ -195,6 +200,9 @@
             font-size: spf(10);
             line-height: calc(19 / 10);
             margin-top: spf(18);
+            a{
+                text-decoration: underline;
+            }
         }
         @include pc{
             &-name{
@@ -301,18 +309,17 @@
         @include pc{
             width: pcf(1712.5);
             top: pcf(166);
-            left: pcf(118);
+            left: 0;
         }
     }
     .bg_2{
         width: 100%;
-        margin-top: spf(150);
+        top: spf(150);
         right: 0;
-        img{
-            animation: fuwafuwa_1 3s ease infinite alternate-reverse;
-        }
+        animation: fuwafuwa_1 3s ease infinite alternate-reverse;
         @include pc{
             top: pcf(384);
+            animation: fuwafuwa_2 3s ease-in-out infinite alternate-reverse;
         }
     }
     .flower{
