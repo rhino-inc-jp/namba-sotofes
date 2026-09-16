@@ -88,3 +88,12 @@ font-style: normal;
     top: 0;
     pointer-events: none;
 }
+.fadein{
+    opacity: 0;
+    transform: translateY(spf(10));
+    transition: opacity .6s ease, transform .6s ease;
+    &.in{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

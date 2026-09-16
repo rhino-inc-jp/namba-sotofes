@@ -312,3 +312,12 @@
         z-index: 30;
     }
 }
+
+.modal__brandname{
+    font-size: spf(20);
+    font-weight: 700;
+    display: block;
+    @include pc{
+        font-size: pcf(28);
+    }
+}

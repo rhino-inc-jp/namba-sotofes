@@ -15,6 +15,28 @@ async function opning() {
   
 }
 
+$(window).on('scroll', function () {
+    const scroll = $(window).scrollTop();
+    
+    $('.fadein').each(function () {
+        const scroll = $(window).scrollTop();
+        const windowHeight = $(window).height();
+        const targetOffset = $(this).offset().top;
+        if (scroll + windowHeight * 0.7 > targetOffset) {
+        $(this).addClass('in');
+        }
+    });
+
+    $('.move').each(function () {
+        const scroll = $(window).scrollTop();
+        const windowHeight = $(window).height();
+        const targetOffset = $(this).offset().top;
+        if (scroll + windowHeight * 0.7 > targetOffset) {
+        $(this).addClass('active');
+        }
+    });
+});
+
 
 // =================================
 // アンカーリンク
