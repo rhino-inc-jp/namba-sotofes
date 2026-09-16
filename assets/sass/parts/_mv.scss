@@ -173,6 +173,15 @@
 
 @keyframes fuwafuwa_1 {
     0% {
+        transform: translateY(-1%);
+    }
+
+    100% {
+        transform: translateY(1%);
+    }
+}
+@keyframes fuwafuwa_2 {
+    0% {
         transform: translateY(-2%);
     }
 

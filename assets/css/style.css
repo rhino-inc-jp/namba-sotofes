@@ -2878,6 +2878,14 @@ a:hover {
 
 @keyframes fuwafuwa_1 {
   0% {
+    transform: translateY(-1%);
+  }
+  100% {
+    transform: translateY(1%);
+  }
+}
+@keyframes fuwafuwa_2 {
+  0% {
     transform: translateY(-2%);
   }
   100% {
@@ -3042,19 +3050,21 @@ a:hover {
 }
 @media screen and (min-width: 769px) {
   .about .bg_1 {
-    width: 23.6979166667vw;
-    margin-top: 0.5729166667vw;
+    width: 16.5625vw;
+    margin-top: 8.1770833333vw;
+    animation: fuwafuwa_1 3s ease-in-out infinite alternate-reverse;
   }
 }
 .about .bg_2 {
-  width: 29.9739583333vw;
-  margin-top: 3.0208333333vw;
+  width: 82.6822916667vw;
+  margin-top: 3.3854166667vw;
   right: 3.6458333333vw;
 }
 .about .bg_3 {
   width: 21.5104166667vw;
   margin-top: 4.84375vw;
   right: 0;
+  animation: fuwafuwa_1 2.3s ease-in-out infinite alternate-reverse;
 }
 
 .brand {
@@ -3106,26 +3116,27 @@ a:hover {
 }
 
 .brand .bg_1 {
-  width: 16.5333333333vw;
+  width: 100%;
   top: unset;
   bottom: 8.2666666667vw;
   left: 0;
 }
 @media screen and (min-width: 769px) {
   .brand .bg_1 {
-    width: 28.2291666667vw;
+    width: 84.3229166667vw;
     bottom: 4.6354166667vw;
+    left: 7.65625vw;
   }
 }
 .brand .bg_2 {
-  width: 44.2666666667vw;
-  margin-top: 6.6666666667%;
+  width: 100%;
+  margin-top: 66.1333333333%;
   right: 0;
+  animation: fuwafuwa_1 2.6s ease-in-out infinite alternate-reverse;
 }
 @media screen and (min-width: 769px) {
   .brand .bg_2 {
-    width: 36.0416666667vw;
-    margin-top: 12.1354166667vw;
+    margin-top: 24.4270833333vw;
   }
 }
 
@@ -3244,6 +3255,13 @@ body {
   width: 21.0666666667vw;
   margin: 8.2666666667vw auto;
 }
+.special__lead {
+  font-size: 3.4666666667vw;
+  line-height: 1.3846153846;
+  color: #EEE1C3;
+  font-weight: 700;
+  margin-top: 5.3333333333vw;
+}
 .special__text {
   font-size: 3.2vw;
   line-height: 1.8333333333;
@@ -3267,6 +3285,10 @@ body {
   .special__logo {
     width: 8.2291666667vw;
     margin: 2.96875vw auto;
+  }
+  .special__lead {
+    font-size: 1.0416666667vw;
+    margin-top: 1.5625vw;
   }
   .special__text {
     font-size: 0.9375vw;
@@ -3507,19 +3529,28 @@ body {
 
 .special .bg_1 {
   width: 100%;
-  top: 2.6666666667vw;
+  top: 8vw;
   left: 0;
 }
 @media screen and (min-width: 769px) {
   .special .bg_1 {
-    width: 29.0104166667vw;
-    top: 4.6354166667vw;
+    width: 89.1927083333vw;
+    top: 8.6458333333vw;
+    left: 6.1458333333vw;
   }
 }
 .special .bg_2 {
-  width: 22.1354166667vw;
-  margin-top: 8.6458333333vw;
+  width: 100%;
+  margin-top: 40vw;
   right: 0;
+}
+.special .bg_2 img {
+  animation: fuwafuwa_1 3s ease infinite alternate-reverse;
+}
+@media screen and (min-width: 769px) {
+  .special .bg_2 {
+    top: 20vw;
+  }
 }
 .special .flower {
   top: unset;
@@ -3584,14 +3615,15 @@ body {
 }
 @media screen and (min-width: 769px) {
   .sponsor .bg_1 {
-    width: 23.9583333333vw;
+    width: 89.7395833333vw;
     top: 3.9583333333vw;
   }
 }
 .sponsor .bg_2 {
-  width: 28.6458333333vw;
-  margin-top: 4.6875vw;
+  width: 100%;
+  margin-top: 15.3645833333vw;
   right: 0;
+  animation: fuwafuwa_2 2.5s ease infinite alternate-reverse;
 }
 
 .access {
@@ -3716,21 +3748,28 @@ body {
 }
 
 .access .bg_1 {
-  width: 100;
-  top: 4.5333333333vw;
+  width: 74.4vw;
+  top: 9.3333333333vw;
   left: 0;
 }
 @media screen and (min-width: 769px) {
   .access .bg_1 {
-    width: 25.8854166667vw;
-    top: 10.8333333333vw;
+    width: 94.6614583333vw;
+    top: 8.28125vw;
   }
 }
 .access .bg_2 {
-  width: 26.45625vw;
-  top: unset;
-  bottom: 0;
+  width: 45.3333333333vw;
+  top: 4.5333333333vw;
   right: 0;
+  animation: fuwafuwa_1 2.5s ease-in-out infinite alternate-reverse;
+}
+@media screen and (min-width: 769px) {
+  .access .bg_2 {
+    width: 100%;
+    top: 15.4166666667vw;
+    animation: fuwafuwa_2 2.5s ease-in-out infinite alternate-reverse;
+  }
 }
 
 .fes-footer {

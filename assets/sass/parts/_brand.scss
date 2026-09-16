@@ -48,24 +48,25 @@
 }
 
 .brand{
-.bg_1{
-    width: spf(62);
-    top: unset;
-    bottom: spf(31);
-    left: 0;
-    @include pc{
-        width: pcf(542);
-        bottom: pcf(89);
+    .bg_1{
+        width: 100%;
+        top: unset;
+        bottom: spf(31);
+        left: 0;
+        @include pc{
+            width: pcf(1619);
+            bottom: pcf(89);
+            left: pcf(147);
+        }
     }
-}
-.bg_2{
-    width: spf(166);
-    margin-top: spc(25);
-    right: 0;
-    @include pc{
-        width: pcf(692);
-        margin-top: pcf(233);
+    .bg_2{
+        width: 100%;
+        margin-top: spc(248);
+        right: 0;
+        animation: fuwafuwa_1 2.6s ease-in-out infinite alternate-reverse;
+        @include pc{
+            margin-top: pcf(469);
+        }
     }
-}
 
 }

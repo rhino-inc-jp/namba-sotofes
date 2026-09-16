@@ -124,19 +124,24 @@
 
 .access{
     .bg_1{
-        width: 100;
-        top: spf(17);
+        width: spf(279);
+        top: spf(35);
         left: 0;
         @include pc{
-            width: pcf(497);
-            top: pcf(208);
+            width: pcf(1817.5);
+            top: pcf(159);
         }
     }
     .bg_2{
-        width: pcf(507.96);
-        top: unset;
-        bottom: 0;
+        width: spf(170);
+        top: spf(17);
         right: 0;
+        animation: fuwafuwa_1 2.5s ease-in-out infinite alternate-reverse;
+        @include pc{
+            width: 100%;
+            top: pcf(296);
+            animation: fuwafuwa_2 2.5s ease-in-out infinite alternate-reverse;
+        }
     }
 
 }
