@@ -3030,6 +3030,7 @@ a:hover {
 }
 .about__text a {
   color: #EEE1C3;
+  text-decoration: underline;
 }
 @media screen and (min-width: 769px) {
   .about {
