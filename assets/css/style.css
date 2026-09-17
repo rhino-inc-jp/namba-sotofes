@@ -3106,13 +3106,15 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  column-rule: 1px solid #000;
-  row-rule: 1px solid #000;
 }
 .brand-list > li {
   cursor: pointer;
   width: 24.4746666667vw;
   position: relative;
+  border-bottom: 1px solid #000;
+}
+.brand-list > li:not(:nth-child(3n)) {
+  border-right: 1px solid #000;
 }
 .brand-list > li p {
   position: absolute;

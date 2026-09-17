@@ -32,13 +32,22 @@
 .brand-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px; 
-    column-rule: 1px solid #000; 
-    row-rule: 1px solid #000;  
     >li{
         cursor: pointer;
-        width: spf(91.78);
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: spf(20) spf(10);
+        &:not(:nth-child(-n+3)){
+            border-top: 1px solid #000;
+        }
+        &:not(:nth-child(3n+1)){
+            border-left: 1px solid #000;
+        }
+        img{
+            width: spf(91.78);
+        }
         p{
             position: absolute;
             top: 50%;
@@ -51,11 +60,14 @@
     }
     @include pc{
         >li{
-            width: pcf(202.4);
+            padding: pcf(30) pcf(20);
+            img{
+                width: pcf(202.4);
+            }
             p{
                 font-size: pcf(25);
             }
-        
+
         }
     }
 }
