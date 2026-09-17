@@ -9,6 +9,9 @@
         font-size: spf(12);
         line-height: calc(22/ 12);
         margin-top: spf(20);
+        a{
+            color: #EEE1C3;
+        }
     }
     @include pc{
         padding: pcf(57) 0 pcf(127);

@@ -3028,6 +3028,9 @@ a:hover {
   line-height: 1.8333333333;
   margin-top: 5.3333333333vw;
 }
+.about__text a {
+  color: #EEE1C3;
+}
 @media screen and (min-width: 769px) {
   .about {
     padding: 2.96875vw 0 6.6145833333vw;
@@ -3563,7 +3566,7 @@ body {
 
 .special .bg_1 {
   width: 100%;
-  top: 8vw;
+  top: 14.6666666667vw;
   left: 0;
 }
 @media screen and (min-width: 769px) {
