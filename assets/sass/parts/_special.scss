@@ -31,6 +31,7 @@
         font-weight: 700;
         a{
             color: #EEE1C3;
+            text-decoration: underline;
         }
         
     }
@@ -309,6 +310,9 @@
             width: 100%;
             margin: pcf(44) auto pcf(55);
         }        
+        .special__item-txt{
+            margin-top: pcf(10);
+        }
     }
 }
 
