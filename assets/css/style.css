@@ -3344,11 +3344,11 @@ body {
 }
 .special__top-num3 {
   width: 7.7466666667vw;
-  margin-top: 13.6vw;
+  margin-top: 9.3333333333vw;
 }
 .special__top-num4 {
-  width: 7.7466666667vw;
-  margin-top: 13.6vw;
+  width: 10.6666666667vw;
+  margin-top: 9.3333333333vw;
 }
 .special__top-lead {
   font-size: 4.8vw;
@@ -3384,11 +3384,11 @@ body {
   }
   .special__top-num3 {
     width: 2.96875vw;
-    margin-top: 5.3125vw;
+    margin-top: 2.9166666667vw;
   }
   .special__top-num4 {
-    width: 2.96875vw;
-    margin-top: 2.6041666667vw;
+    width: 3.6458333333vw;
+    margin-top: 2.9166666667vw;
   }
   .special__top-lead {
     font-size: 1.4583333333vw;
@@ -3709,6 +3709,8 @@ body {
 
 .app-bold {
   font-weight: 700;
+  display: block;
+  text-align: center;
 }
 
 .special__app {

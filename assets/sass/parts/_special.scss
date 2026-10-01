@@ -77,11 +77,11 @@
             }
             &3{
                 width: spf(29.05);
-                margin-top: spf(51);
+                margin-top: spf(35);
             }
             &4{
-                width: spf(29.05);
-                margin-top: spf(51);
+                width: spf(40);
+                margin-top: spf(35);
             }
         }
         &-lead{
@@ -117,11 +117,11 @@
                 }
                 &3{
                     width: pcf(57);
-                    margin-top: pcf(102);
+                    margin-top: pcf(56);
                 }
                 &4{
-                    width: pcf(57);
-                    margin-top: pcf(50);
+                    width: pcf(70);
+                    margin-top: pcf(56);
                 }
             }
             &-lead{
@@ -448,6 +448,8 @@
 
 .app-bold{
     font-weight: 700;
+    display: block;
+    text-align: center;
 }
 .special__app{
     width: spf(120);
