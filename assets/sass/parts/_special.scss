@@ -79,6 +79,10 @@
                 width: spf(29.05);
                 margin-top: spf(51);
             }
+            &4{
+                width: spf(29.05);
+                margin-top: spf(51);
+            }
         }
         &-lead{
             font-size: spf(18);
@@ -91,7 +95,10 @@
             font-size: spf(12);
             line-height: calc(22 / 12);
             margin-top: spf(24);
-            
+            font-feature-settings: "palt";
+            a{
+                text-decoration: underline;
+            }
         }
         &-soon{
             width: spf(202.54);
@@ -111,6 +118,10 @@
                 &3{
                     width: pcf(57);
                     margin-top: pcf(102);
+                }
+                &4{
+                    width: pcf(57);
+                    margin-top: pcf(50);
                 }
             }
             &-lead{
@@ -150,6 +161,7 @@
                 &:nth-of-type(4){
                     margin: spc(30) 0 0 auto;
                 }
+                
                 
             }
         }
@@ -198,6 +210,46 @@
             &-text{
                 font-size: pcf(13);
                 line-height: calc(25 / 13);
+            }
+        }
+    }
+    &__gest{
+        >li{
+           margin-top: spf(50); 
+        }
+        &-name{
+            font-size: spf(19);
+            line-height: calc(21 / 19);
+            font-weight: bold;
+            text-align: center;
+        }
+        &-photo{
+            width: spf(203);
+            margin: spf(24) auto 0;
+        }
+        &-text{
+            font-size: spf(12);
+            line-height: calc(19 / 10);
+            margin-top: spf(18);
+            a{
+                text-decoration: underline;
+            }
+        }
+        @include pc{
+            >li{
+                margin-top: pcf(50); 
+            }
+            &-name{
+                font-size: pcf(20);
+            }
+            &-photo{
+                width: pcf(300);
+                margin: pcf(25) auto 0;
+            }
+            &-text{
+                font-size: pcf(15);
+                line-height: calc(25 / 13);
+                margin-top: pcf(18);
             }
         }
     }
@@ -337,6 +389,29 @@
             animation: fuwafuwa_2 3s ease-in-out infinite alternate-reverse;
         }
     }
+    .bg_3{
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        top: unset;
+        @include pc{
+            width: pcf(1712.5);
+            bottom: pcf(480);
+            left: 0;
+        }
+    }
+    .bg_4{
+        width: 100%;
+        top: unset;
+        bottom: spf(100);
+        right: 0;
+        animation: fuwafuwa_1 3s ease infinite alternate-reverse;
+        @include pc{
+            top: unset;
+            bottom: pcf(2200);
+            animation: fuwafuwa_2 3s ease-in-out infinite alternate-reverse;
+        }
+    }
     .flower{
         top: unset;
         width: spf(59.33);
@@ -359,5 +434,26 @@
     display: block;
     @include pc{
         font-size: pcf(28);
+    }
+}
+
+.act-logo{
+    width: spf(203);
+    margin: spf(40) auto 0;
+    @include pc{
+        width: pcf(244);
+        margin: pcf(40) auto 0;
+    }
+}
+
+.app-bold{
+    font-weight: 700;
+}
+.special__app{
+    width: spf(120);
+    margin: spf(40) auto 0;
+    @include pc{
+        width: pcf(224);
+        margin: pcf(40) auto 0;
     }
 }
