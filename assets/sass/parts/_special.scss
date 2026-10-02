@@ -90,6 +90,7 @@
             margin-top: spf(18);
             text-align: center;
             font-weight: bold;
+            font-feature-settings: "palt";
         }
         &-text{
             font-size: spf(12);
@@ -463,9 +464,12 @@
 }
 
 .act-run{
-    font-size: spf(14);
-    line-height:1;
+    font-size: spf(16);
+    font-weight: 700;
+    margin-top: 10px;
+    display: block;
+    line-height: 1.5;
     @include pc{
-         font-size: pcf(17);
+         font-size: pcf(22);
      }
 }
