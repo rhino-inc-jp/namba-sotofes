@@ -235,6 +235,7 @@
                 text-decoration: underline;
             }
         }
+        
         @include pc{
             >li{
                 margin-top: pcf(50); 
@@ -251,6 +252,7 @@
                 line-height: calc(25 / 13);
                 margin-top: pcf(18);
             }
+            
         }
     }
     
@@ -458,4 +460,12 @@
         width: pcf(224);
         margin: pcf(40) auto 0;
     }
+}
+
+.act-run{
+    font-size: spf(14);
+    line-height:1;
+    @include pc{
+         font-size: pcf(17);
+     }
 }

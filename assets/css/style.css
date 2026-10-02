@@ -3724,6 +3724,16 @@ body {
   }
 }
 
+.act-run {
+  font-size: 3.7333333333vw;
+  line-height: 1;
+}
+@media screen and (min-width: 769px) {
+  .act-run {
+    font-size: 0.8854166667vw;
+  }
+}
+
 .sponsor {
   padding: 9.3333333333vw 0 10.4vw;
   background: #568DB8;
