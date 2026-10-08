@@ -3440,7 +3440,7 @@ body {
   border-top: none;
 }
 .special__brand-name {
-  font-size: 4vw;
+  font-size: 4.5333333333vw;
   line-height: 1.4;
   font-weight: bold;
   text-align: center;
@@ -3469,7 +3469,7 @@ body {
     margin-top: 0vw;
   }
   .special__brand-name {
-    font-size: 0.78125vw;
+    font-size: 0.8854166667vw;
     line-height: 1.4;
   }
   .special__brand-text {
