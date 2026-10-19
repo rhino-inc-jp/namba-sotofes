@@ -473,3 +473,13 @@
          font-size: pcf(22);
      }
 }
+
+.sticker{
+    width: spf(200);
+    line-height: 0;
+    margin: 30px auto;
+    @include pc{
+        width: pcf(300);
+        margin: 40px auto;
+    }
+}

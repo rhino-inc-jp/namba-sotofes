@@ -3738,6 +3738,18 @@ body {
   }
 }
 
+.sticker {
+  width: 53.3333333333vw;
+  line-height: 0;
+  margin: 30px auto;
+}
+@media screen and (min-width: 769px) {
+  .sticker {
+    width: 15.625vw;
+    margin: 40px auto;
+  }
+}
+
 .sponsor {
   padding: 9.3333333333vw 0 10.4vw;
   background: #568DB8;
