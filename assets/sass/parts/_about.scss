@@ -13,6 +13,10 @@
             color: #EEE1C3;
             text-decoration: underline;
         }
+        span{
+            font-size: spf(10);
+            font-feature-settings: "palt";
+        }
     }
     @include pc{
         padding: pcf(57) 0 pcf(127);
@@ -24,6 +28,9 @@
             margin-top: pcf(21);
             width: 100%;
             font-feature-settings: "palt";
+            span{
+            font-size: pcf(16);
+        }
         }
     }
 }
