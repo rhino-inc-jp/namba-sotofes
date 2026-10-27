@@ -3033,7 +3033,7 @@ a:hover {
   text-decoration: underline;
 }
 .about__text span {
-  font-size: 2.6666666667vw;
+  font-size: 2.4vw;
   font-feature-settings: "palt";
 }
 @media screen and (min-width: 769px) {
@@ -3050,7 +3050,7 @@ a:hover {
     font-feature-settings: "palt";
   }
   .about__text span {
-    font-size: 0.8333333333vw;
+    font-size: 0.78125vw;
   }
 }
 
